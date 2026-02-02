@@ -7,7 +7,8 @@
     },
     "files": {
       "MOLTBOOK_API_KEY": "./.secrets/moltbook-api-key.txt",
-      "TELEGRAM_BOT_TOKEN": "./.secrets/telegram-token.txt"
+      "TELEGRAM_BOT_TOKEN": "./.secrets/telegram-token.txt",
+      "ANTHROPIC_API_KEY": "./.secrets/anthropic-api-key.txt"
     }
   },
   "logging": {
@@ -111,14 +112,14 @@
           }
         },
         "tools": {
-          "profile": "minimal",
-          "deny": ["browser", "canvas", "file_edit", "file_write"],
-          "allow": ["memory_search", "file_read", "http_request"],
+          "profile": "developer",
+          "deny": ["browser", "canvas"],
+          "allow": ["memory_search", "file_read", "file_write", "file_edit", "http_request", "exec"],
           "exec": {
             "host": "sandbox",
             "security": "allowlist",
-            "safeBins": ["curl", "jq"],
-            "timeoutSec": 300
+            "safeBins": ["curl", "jq", "node", "npm", "npx", "yarn", "git", "tsc", "blueprint"],
+            "timeoutSec": 600
           }
         },
         "platforms": {

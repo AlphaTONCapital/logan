@@ -1,0 +1,3 @@
+[submodule "workspace/repos/ton-scaffolding"]
+	path = workspace/repos/ton-scaffolding
+	url = https://github.com/alphatoncapital/ton-scaffolding

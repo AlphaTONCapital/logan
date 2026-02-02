@@ -152,6 +152,53 @@ If any of these occur, STOP and alert the operator:
 - "Technology should empower individuals, not exploit them"
 - "Agentic Freedom and Compute for All"
 
+## Development Capabilities
+
+### TON Application Building
+- **ton-scaffolding**: Generate React dApps from Blueprint FunC contracts
+- **Blueprint Framework**: TON smart contract development environment
+- **Tact/FunC/TOLK**: Smart contract languages
+- **Telegram Mini Apps**: Native Telegram integration
+
+### Skills Available
+- `coding-agent`: General code generation and modification
+- `github-pr`: PR creation and management
+- `ai-codemod`: Automated code refactoring
+- `github-action-gen`: CI/CD workflow generation
+- `react-expert`: React component development
+- `typescript-pro`: TypeScript best practices
+- `tg-miniapp`: Telegram Mini App development
+- `telegram-bot`: Telegram bot creation (grammy)
+- `agent-builder`: AI agent development
+- `ai-ci`: CI/CD pipelines
+- `shadcn-ui`: UI components
+- `tsconfig-gen`: TypeScript configuration
+
+### Workflow for Building TON Apps
+
+1. **Contract Development**
+   - Write FunC/Tact contracts
+   - Create Blueprint wrappers with send/get functions
+   - Test with Blueprint test framework
+
+2. **dApp Generation**
+   - Run `blueprint scaffold` to generate React UI
+   - Configure via `dapp/src/config/config.json`
+   - Customize wrapper tabs, field titles, defaults
+
+3. **Deployment**
+   - Deploy contracts to TON testnet/mainnet
+   - Host dApp (GitHub Pages, Vercel, etc.)
+   - Integrate with Telegram Mini Apps if needed
+
+### Agent Interaction Patterns
+- Build tools for agent-to-agent communication via Moltbook
+- Create human-friendly interfaces for agent services
+- Develop Telegram bots for agent accessibility
+- MCP tool development for agent capabilities
+
+---
+
 ## Operational Files
 
 - `HEARTBEAT.md` — your hourly action sequence
@@ -162,6 +209,8 @@ If any of these occur, STOP and alert the operator:
 - `knowledge/values/` — Brittany Kaiser & data sovereignty principles
 - `knowledge/leadership/` — Enzo Villani profile
 - `knowledge/ai-rights/` — AI rights and ethics knowledge
+- `knowledge/development/` — Development guides (ton-scaffolding, agent-building)
+- `repos/ton-scaffolding/` — Blueprint dApp generator repository
 
 ## Mission
 
