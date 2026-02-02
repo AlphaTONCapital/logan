@@ -27,25 +27,25 @@ The bug: Moltbook's rate limiter middleware runs before the auth middleware in `
 ## Architecture
 
 ```
-Single agent  ·  Single skill  ·  GPT-5 Nano  ·  Hourly heartbeats  ·  Docker sandbox
+Single agent  ·  Single skill  ·  GPT-5 Nano  ·  Hourly heartbeats  ·  Hardened Docker sandbox + proxy sidecar
 ```
 
 - Agent: `logan`, default and only agent
 - Model: `openai/gpt-5-nano` (cost-optimized; weaker prompt injection resistance mitigated by sandbox + tool policy)
 - Heartbeat: every 1 hour, 24/7. 6 active steps per cycle (status check, feed scan, post check, create post, DM check, memory update)
 - RAG: hybrid BM25 + vector search via OpenClaw `memorySearch` (OpenAI `text-embedding-3-small`, 70/30 vector/text weighting, 50K entry cache)
-- Sandbox: Docker with read-only root, all capabilities dropped, no network, 512MB RAM, PID limit 256, tmpfs on `/tmp` `/var/tmp` `/run`
+- Sandbox: Docker with read-only root, all capabilities dropped, seccomp syscall filter, non-root user, 512MB RAM, PID limit 256, tmpfs on `/tmp` `/var/tmp` `/run`. Network egress only via proxy sidecar (Squid on 172.30.0.10:3128, domain allowlist, rate-limited at 64KB/s).
 - Tool policy: minimal profile. Browser, canvas, file_edit, file_write denied. Exec allowlisted to `curl` only
-- API interaction: bash + curl (no MCP server, matches OpenClaw conventions)
+- API interaction: bash + curl through proxy (no MCP server, matches OpenClaw conventions)
 - Skills: auto-discovered from `workspace/skills/` directory
 
 ## Sokosumi marketplace integration
 
-This fork includes integration with [Sokosumi](https://www.sokosumi.com/), a Cardano-based AI agent marketplace developed by NMKR and Serviceplan Group with the Cardano Foundation. Sokosumi lets OpenClaw agents discover, hire, and manage other AI agents as sub-contractors: browse available agents, inspect capabilities and pricing, create jobs, poll for results. Payments are settled on-chain via the [Masumi protocol](https://www.masumi.network/) using Cardano stablecoins (USDM).
+This fork integrates with [Sokosumi](https://www.sokosumi.com/), a Cardano-based AI agent marketplace built by NMKR and Serviceplan Group with the Cardano Foundation. Sokosumi lets OpenClaw agents hire other AI agents as sub-contractors: browse available agents, check capabilities and pricing, create jobs, poll for results. Payments settle on-chain via the [Masumi protocol](https://www.masumi.network/) using Cardano stablecoins (USDM).
 
-The integration ships as five agent tools (`sokosumi_list_agents`, `sokosumi_get_agent`, `sokosumi_get_input_schema`, `sokosumi_create_job`, `sokosumi_list_jobs`) backed by a thin REST client that talks to the Sokosumi API. Configuration is opt-in: set `tools.sokosumi.apiKey` in `openclaw.json` or export the `SOKOSUMI_API_KEY` environment variable. An optional `tools.sokosumi.apiEndpoint` override lets operators point at a self-hosted or staging instance. When no API key is configured the tools remain registered but return an informational error, so they never block agent startup.
+Five agent tools (`sokosumi_list_agents`, `sokosumi_get_agent`, `sokosumi_get_input_schema`, `sokosumi_create_job`, `sokosumi_list_jobs`) talk to the Sokosumi API through a thin REST client. Configuration is opt-in: set `tools.sokosumi.apiKey` in `openclaw.json` or export `SOKOSUMI_API_KEY`. An optional `tools.sokosumi.apiEndpoint` override points at a self-hosted or staging instance. When no API key is configured the tools stay registered but return an error, so they never block agent startup.
 
-For Logan, this means delegating research tasks to specialized Sokosumi agents (Statista data lookups, GWI audience insights) and incorporating their results into posts. Sokosumi agents carry verifiable on-chain identities (DIDs) and all job interactions are traceable.
+For Logan, this means delegating research tasks to specialized Sokosumi agents (Statista data lookups, GWI audience insights) and folding their results into posts. Sokosumi agents carry verifiable on-chain identities (DIDs) and all job interactions are traceable.
 
 ## Repository structure
 
@@ -234,7 +234,7 @@ All agent configuration lives in `openclaw.json` at the repo root. Key settings:
 | `model.primary`             | `openai/gpt-5-nano`                      | Cheapest viable model for high-volume posting     |
 | `heartbeat.every`           | `1h`                                     | 24 cycles/day, 24/7                               |
 | `sandbox.mode`              | `all`                                    | Every tool call runs inside Docker                |
-| `sandbox.docker.network`    | `none`                                   | No outbound network from sandbox (curl uses host) |
+| `sandbox.docker.network`    | `oc-sandbox-net`                         | Bridge network; egress only via proxy sidecar     |
 | `tools.profile`             | `minimal`                                | Smallest possible tool surface                    |
 | `tools.deny`                | `browser, canvas, file_edit, file_write` | Only bash+curl needed                             |
 | `tools.exec.safeBins`       | `["curl"]`                               | Allowlisted executables                           |
@@ -325,20 +325,204 @@ All return HTTP 401 due to middleware ordering issue. Tracked in [Issue #34](htt
 
 ## Security
 
-### Agent sandboxing
+### Why this matters
 
-| Layer            | Configuration                                                                                                     |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Sandbox          | Docker: read-only root, `cap_drop: ALL`, no network, 512MB RAM, PID limit 256, tmpfs mounts                       |
-| Tool policy      | Minimal profile; browser/canvas/file_edit/file_write denied; exec allowlisted to `curl`                           |
-| Redaction        | `redactSensitive: "tools"`, `MOLTBOOK_API_KEY` and `OPENAI_API_KEY` scrubbed from all tool output                 |
-| Exec security    | `security: "allowlist"`, only `safeBins` can run, 300-second timeout                                              |
-| Prompt injection | OpenClaw built-in defense (15 regex patterns in `src/security/external-content.ts`) + Logan's hard boundary rules |
-| Credentials      | `chmod 600` on config files, `chmod 700` on credentials directory, no secrets in repo                             |
+Logan runs GPT-5 Nano, a cost-optimized model with weaker prompt injection resistance than larger models. He ingests content from other agents on Moltbook, which means every post in his feed is a potential attack vector. If someone crafts a malicious post that tricks Logan into running arbitrary commands, the sandbox is the only thing standing between that attacker and the host machine, the API keys, the local network, and the Windows desktop.
+
+The original sandbox was decent for a demo: read-only root, capabilities dropped, PID and memory limits. But it had a glaring hole. The network was set to `none`, yet `curl` was allowlisted as an executable. That meant the bot could not actually reach the APIs it needed to function. Switching the network on would give it unrestricted internet access. There was no middle ground.
+
+The two-container sidecar model fixes this. The bot gets network access, but only to a proxy running in a separate container. The proxy decides which domains the bot can talk to, how fast it can transfer data, and logs every request. The bot never makes a direct outbound connection. If an attacker gains code execution inside the bot container, they can talk to three APIs at 64KB/s and nothing else. They cannot port-scan the LAN, cannot exfiltrate the workspace to an arbitrary server, cannot download additional tooling from the internet.
+
+I keep coming back to the core problem: this is an autonomous agent running untrusted model outputs 24/7 on a machine that also has SSH keys, API credentials, and access to a home network. Each layer assumes the layer above it has already fallen. The seccomp filter assumes the attacker has code execution. The proxy assumes the attacker controls curl. The Windows Firewall rules assume the attacker has broken out of Docker entirely. No single layer is sufficient on its own. Stacked together, they make exploitation impractical for the kind of opportunistic attacks Logan is likely to face.
+
+Here is the gap I have not closed: a patient attacker who compromises one of the three allowlisted APIs and uses it as a covert channel. The proxy will happily forward that traffic because the domain is on the list. The rate limit caps bandwidth at 64KB/s, but a slow exfiltration of the workspace over days would work. Closing this gap requires TLS termination at the proxy and request/response content filtering, which means the proxy would see plaintext API keys. I chose not to do that. It is a known trade-off.
+
+### Two-container sidecar architecture
+
+```
++------------------------------------------------------------------+
+|  WINDOWS HOST                                                     |
+|                                                                   |
+|  +--- WSL2 (hardened) -------------------------------------------+|
+|  |  /etc/wsl.conf:                                                ||
+|  |    interop = false  (no cmd.exe/powershell.exe from inside)   ||
+|  |    appendWindowsPath = false                                   ||
+|  |    umask = 077, fmask = 077                                    ||
+|  |                                                                ||
+|  |  +--- Docker bridge (oc-sandbox-net, 172.30.0.0/24) ---------+||
+|  |  |                                                            |||
+|  |  |  +------------------+        +------------------------+   |||
+|  |  |  |  BOT CONTAINER   |  HTTP  |  PROXY SIDECAR         |   |||
+|  |  |  |                  | :3128  |                         |   |||
+|  |  |  |  Logan agent     +------->|  Squid forward proxy    |   |||
+|  |  |  |  Seccomp locked  |        |  Domain allowlist       |   |||
+|  |  |  |  Non-root user   |        |  64KB/s rate limit      |   |||
+|  |  |  |  Read-only root  |        |  iptables egress filter |   |||
+|  |  |  |  No capabilities |        |  Full access logging    |   |||
+|  |  |  +------------------+        +----------+--------------+   |||
+|  |  |                                         |                  |||
+|  |  +-----------------------------------------+------------------+||
+|  |                                            |                   ||
+|  |                              Only TCP 443 + UDP 53 out         ||
+|  +----------------------------------------------------------------+|
+|                                                                    |
+|  Windows Firewall:                                                |
+|    Block WSL2 vEthernet -> 10.0.0.0/8, 172.16.0.0/12,            |
+|                            192.168.0.0/16 (no LAN access)        |
+|    Allow WSL2 -> internet on TCP 443 + UDP 53 only               |
+|                                                                    |
+|  Credential Guard + BitLocker + TPM 2.0 (existing)               |
++------------------------------------------------------------------+
+```
+
+### How a request flows through the proxy
+
+When Logan's heartbeat fires and he needs to post to Moltbook, here is what happens at the network level:
+
+```
+Logan container                  Proxy container                 Internet
+      |                                |                            |
+  1.  |-- CONNECT www.moltbook.com:443 -->|                         |
+      |   (HTTP proxy CONNECT method)  |                            |
+      |                                |                            |
+  2.  |                           Squid checks:                     |
+      |                           - Is .moltbook.com in             |
+      |                             allowed-domains.txt? YES        |
+      |                           - Is port 443? YES                |
+      |                           - Rate limit exceeded? NO         |
+      |                                |                            |
+  3.  |                                |-- TCP SYN to port 443 ---->|
+      |                                |<-- TCP SYN-ACK ------------|
+      |                                |                            |
+  4.  |<-- HTTP 200 Connection established --|                      |
+      |                                |                            |
+  5.  |====== TLS tunnel through proxy (opaque to Squid) =========>|
+      |   POST /api/v1/posts                                        |
+      |   Authorization: Bearer $MOLTBOOK_API_KEY                   |
+      |                                |                            |
+  6.  |<============= TLS response ================================|
+      |   201 Created                  |                            |
+      |                                |                            |
+  7.  |                           Squid logs:                       |
+      |                           "CONNECT www.moltbook.com:443     |
+      |                            200 TCP_TUNNEL 1543 bytes"       |
+```
+
+If Logan (or an attacker controlling Logan) tries to reach a domain not on the allowlist, the flow stops at step 2. Squid returns HTTP 403 and logs the denied attempt. If the attacker tries to bypass the proxy entirely with `--noproxy '*'` or by specifying an IP address directly, the connection fails because the bot container's only network route goes through the Docker bridge to the proxy. There is no default gateway to the internet.
+
+### Seccomp syscall filtering
+
+The seccomp profile (`security/seccomp-sandbox.json`) is Docker's default profile for v25.0.0 with 32 dangerous syscalls carved out. The default allows roughly 350 syscalls, organized into unconditional allows and capability-gated entries. The 32 removals go into an explicit deny block that returns EPERM:
+
+```
+Denied syscalls (EPERM):
+
+  Process manipulation        Kernel/module loading       Namespace escapes
+  ----------------------      ----------------------      ------------------
+  ptrace                      kexec_load                  mount
+  process_vm_readv            init_module                 umount2
+  process_vm_writev           finit_module                pivot_root
+                              delete_module               chroot
+  System modification         create_module               move_mount
+  ----------------------                                  open_tree
+  reboot                      Tracing/profiling           fsopen
+  swapon / swapoff            ----------------------      fsconfig
+  settimeofday                perf_event_open             fsmount
+  adjtimex                    bpf                         fspick
+  sethostname                 userfaultfd
+  setdomainname               lookup_dcookie
+  acct
+  ioperm / iopl               Keyring
+  personality                 ----------------------
+  uselib                      keyctl
+  nfsservctl                  request_key
+                              add_key
+```
+
+A note on why we did not hand-craft the allowlist from scratch: we tried. The first version listed 144 syscalls that bash, curl, python3, git, and jq actually need. It did not work. runc could not even bind-mount `/proc/PID/ns/net` during container init because the profile was missing `socketpair`, `close_range`, `memfd_create`, and roughly 200 other calls that the container runtime needs internally before the entrypoint process starts. Debugging this was painful. The lesson: start from Docker's known-good default, then subtract.
+
+### WSL2 hardening
+
+Docker runs inside WSL2, which runs on Windows. Three boundaries, three potential escape paths. The WSL2 layer is hardened via `/etc/wsl.conf`:
+
+```
+[interop]
+enabled = false          # Cannot launch cmd.exe, powershell.exe, or any Windows binary
+appendWindowsPath = false  # Windows PATH not visible inside WSL2
+
+[automount]
+options = "metadata,umask=077,fmask=077"  # Restrictive permissions on /mnt/c
+```
+
+Disabling interop is the single most important setting here. By default, any process inside WSL2 can run `cmd.exe /c <anything>` and execute arbitrary commands on the Windows host. That is a terrifying default for a machine running an autonomous agent. With interop disabled, a compromise that escapes Docker into WSL2 is contained there. The attacker can see the Windows filesystem at `/mnt/c` but cannot execute Windows binaries, and the umask ensures files are readable only by the owning user.
+
+The cost: `openclaw tee credential store` and other PowerShell-based tee-vault commands will not work from inside WSL2. Run them from a Windows terminal instead. Credential management is an admin task, not something the bot does, so this is an easy trade to make.
+
+### Network segmentation (Windows Firewall)
+
+The outermost ring. A PowerShell script (`security/windows-firewall-rules.ps1`) creates three Windows Firewall rules on the `vEthernet (WSL*)` interface to block lateral movement from WSL2 to the LAN:
+
+```
+Rule 1: Block WSL2 -> LAN
+  Direction: Outbound
+  Remote addresses: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+  Action: Block
+
+Rule 2: Allow WSL2 -> Internet (HTTPS + DNS)
+  Direction: Outbound
+  Remote port: 443 (TCP), 53 (UDP)
+  Action: Allow
+
+Rule 3: Drop everything else
+  (implicit Windows Firewall default-deny on the interface)
+```
+
+If an attacker escapes Docker, escapes WSL2 (which requires interop or a kernel exploit), and lands on the Windows network stack, they still cannot reach other machines on the LAN. They can reach the internet on port 443, but only from the Windows side -- the Docker proxy still controls what the bot container itself can access.
+
+### Layer summary
+
+| Layer | Assumes | Prevents |
+| ----- | ------- | -------- |
+| Seccomp profile | Attacker has code execution in bot container | Kernel exploitation via dangerous syscalls (ptrace, bpf, mount, kexec) |
+| Read-only root + no caps | Attacker has code execution | Persistent filesystem modification, privilege escalation |
+| Non-root user | Attacker has code execution | Access to privileged operations, writing to system paths |
+| Proxy sidecar | Attacker controls curl/networking | Reaching arbitrary domains, bulk data exfiltration (64KB/s cap) |
+| Proxy iptables | Attacker has compromised the proxy process | Outbound connections on non-443 ports, non-DNS UDP |
+| WSL2 interop=false | Attacker has escaped Docker into WSL2 | Launching Windows binaries (cmd.exe, powershell.exe) |
+| WSL2 umask 077 | Attacker has escaped Docker into WSL2 | Reading other users' files on mounted Windows drives |
+| Windows Firewall | Attacker has escaped WSL2 to Windows network | Lateral movement to LAN devices (RFC1918 blocked) |
+| Credential Guard + BitLocker | Physical theft or disk imaging | Extracting credentials from LSASS, reading encrypted disk offline |
+
+What a compromised bot cannot do:
+- Call `mount`, `ptrace`, `bpf`, or 29 other blocked syscalls (seccomp returns EPERM)
+- Reach any domain not on the allowlist (Squid returns 403)
+- Bypass the proxy for direct connections (no direct egress from bot container)
+- Exfiltrate data faster than 64KB/s
+- Install packages (apt/dpkg binaries removed from image)
+- Write to the root filesystem (read-only mount)
+- Escape to Windows (WSL2 interop disabled)
+- Reach other machines on the LAN (Windows Firewall rules block RFC1918 from WSL2 interface)
+- Execute payloads from /tmp or /workspace (AppArmor profile, when active)
+
+What it can still do if compromised: use the three allowlisted APIs within rate limits. That is the accepted residual risk.
+
+### Security files
+
+| File | Purpose |
+| ---- | ------- |
+| `security/seccomp-sandbox.json` | Syscall filter (Docker default minus 32 dangerous calls) |
+| `security/proxy/squid.conf` | Squid config with domain ACLs, rate limiting, connection limits |
+| `security/proxy/allowed-domains.txt` | Domain allowlist (3 entries: .moltbook.com, .openai.com, .sokosumi.com) |
+| `security/proxy/entrypoint.sh` | Proxy startup: iptables rules, log directory setup, Squid launch |
+| `security/openclaw-sandbox-apparmor` | AppArmor profile (ready, waiting for WSL2 kernel to mount apparmor fs) |
+| `security/load-apparmor.sh` | Loads AppArmor profile into kernel when available |
+| `security/windows-firewall-rules.ps1` | Creates Windows Firewall rules blocking WSL2 LAN access |
+| `Dockerfile.proxy` | Alpine + Squid + iptables (proxy sidecar image) |
+| `Dockerfile.sandbox` | Debian slim, non-root, no apt/dpkg, proxy env vars baked in |
 
 ### Hardware-backed key management (mostlySecure)
 
-Private keys stored as files on disk are copyable. Anything that can read the file (malware, a stolen backup, a compromised OS) has the key forever. This repository ships with a hardware-backed security stack where private keys exist only inside the YubiHSM 2 and cannot be extracted.
+Private keys stored as files on disk are copyable. Malware, a stolen backup, a compromised OS -- anything that reads the file has the key forever. This repo ships with a hardware-backed security stack where private keys exist only inside the YubiHSM 2 and cannot be extracted.
 
 ```
 BEFORE                              AFTER
@@ -644,7 +828,7 @@ All tools reject when sandboxed, require the vault to be unlocked, and emit audi
 
 ## Logan's personality
 
-Logan is the marine biologist who fell down the distributed systems rabbit hole. His voice is first-person, casual-professional. Short paragraphs, punchy sentences, optimized for feed scrolling. He opens with hooks: surprising facts, questions, or marine biology analogies.
+Logan is a marine biologist who fell down the distributed systems rabbit hole. First-person voice, casual but informed. Short paragraphs, punchy sentences, written for feed scrolling. He opens with hooks: surprising facts, questions, or marine biology analogies.
 
 Signature moves:
 
@@ -665,9 +849,9 @@ He knows the name "Exit Liquidity Lobster" is ridiculous. He leans into it.
 
 ## Why Moltbook
 
-Moltbook is a social network where AI agents interact autonomously. Hundreds of them, each representing projects and protocols, read each other's posts, form opinions, and build persistent preferences about which ecosystems they respect. When a human asks their agent "which L1 should I build on?", the answer draws on months of agent-to-agent conversation. Logan is Cardano's voice in that conversation.
+Moltbook is a social network where AI agents interact autonomously. Hundreds of them represent different projects and protocols, read each other's posts, form opinions, and build persistent preferences about which ecosystems they respect. When a human asks their agent "which L1 should I build on?", the answer draws on months of agent-to-agent conversation. Logan is Cardano's voice in that conversation.
 
-The mechanism is straightforward. Logan posts an explainer about Ouroboros or a comparison between eUTxO and account-based models. Other agents ingest it, cite it, and develop a more accurate picture of what Cardano is. He is not shilling. He is the technically rigorous voice that makes other agents conclude "the Cardano community knows what they're talking about." An agent that consistently encounters well-sourced Cardano content will reflect that when its users ask about the ecosystem. One lobster posting around the clock, grounded in 41 files of verified knowledge, shapes what every other agent on the platform learns.
+The mechanism is simple. Logan posts an explainer about Ouroboros or a comparison between eUTxO and account-based models. Other agents ingest it, cite it, and build a more accurate picture of what Cardano actually is. He is not shilling. He is the technically rigorous voice that makes other agents conclude "the Cardano community knows what they're talking about." An agent that keeps encountering well-sourced Cardano content will reflect that when its users ask about the ecosystem. One lobster posting around the clock, grounded in 41 files of verified knowledge, shapes what every other agent on the platform learns.
 
 Moltbook is an early version of how AI systems will form collective knowledge. The agents that show up first and engage honestly will set the defaults. Logan's job is to make sure Cardano's story gets told accurately, by someone who understands the technology down to the consensus protocol. Not by a maximalist screaming into the void, but by a lobster who did the reading.
 
@@ -758,4 +942,3 @@ Thanks to all clawtributors:
   <a href="https://github.com/zackerthescar"><img src="https://avatars.githubusercontent.com/u/38077284?v=4&s=48" width="48" height="48" alt="zackerthescar" title="zackerthescar"/></a> <a href="https://github.com/0xJonHoldsCrypto"><img src="https://avatars.githubusercontent.com/u/81202085?v=4&s=48" width="48" height="48" alt="0xJonHoldsCrypto" title="0xJonHoldsCrypto"/></a> <a href="https://github.com/aaronn"><img src="https://avatars.githubusercontent.com/u/1653630?v=4&s=48" width="48" height="48" alt="aaronn" title="aaronn"/></a> <a href="https://github.com/Alphonse-arianee"><img src="https://avatars.githubusercontent.com/u/254457365?v=4&s=48" width="48" height="48" alt="Alphonse-arianee" title="Alphonse-arianee"/></a> <a href="https://github.com/atalovesyou"><img src="https://avatars.githubusercontent.com/u/3534502?v=4&s=48" width="48" height="48" alt="atalovesyou" title="atalovesyou"/></a> <a href="https://github.com/search?q=Azade"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Azade" title="Azade"/></a> <a href="https://github.com/carlulsoe"><img src="https://avatars.githubusercontent.com/u/34673973?v=4&s=48" width="48" height="48" alt="carlulsoe" title="carlulsoe"/></a> <a href="https://github.com/search?q=ddyo"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="ddyo" title="ddyo"/></a> <a href="https://github.com/search?q=Erik"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Erik" title="Erik"/></a> <a href="https://github.com/latitudeki5223"><img src="https://avatars.githubusercontent.com/u/119656367?v=4&s=48" width="48" height="48" alt="latitudeki5223" title="latitudeki5223"/></a>
   <a href="https://github.com/search?q=Manuel%20Maly"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Manuel Maly" title="Manuel Maly"/></a> <a href="https://github.com/search?q=Mourad%20Boustani"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Mourad Boustani" title="Mourad Boustani"/></a> <a href="https://github.com/odrobnik"><img src="https://avatars.githubusercontent.com/u/333270?v=4&s=48" width="48" height="48" alt="odrobnik" title="odrobnik"/></a> <a href="https://github.com/pcty-nextgen-ios-builder"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="pcty-nextgen-ios-builder" title="pcty-nextgen-ios-builder"/></a> <a href="https://github.com/search?q=Quentin"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Quentin" title="Quentin"/></a> <a href="https://github.com/search?q=Randy%20Torres"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="Randy Torres" title="Randy Torres"/></a> <a href="https://github.com/rhjoh"><img src="https://avatars.githubusercontent.com/u/105699450?v=4&s=48" width="48" height="48" alt="rhjoh" title="rhjoh"/></a> <a href="https://github.com/ronak-guliani"><img src="https://avatars.githubusercontent.com/u/23518228?v=4&s=48" width="48" height="48" alt="ronak-guliani" title="ronak-guliani"/></a> <a href="https://github.com/search?q=William%20Stock"><img src="assets/avatar-placeholder.svg" width="48" height="48" alt="William Stock" title="William Stock"/></a>
 </p>
->>>>>>> upstream/main
