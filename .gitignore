@@ -75,3 +75,6 @@ USER.md
 .claude/
 nul
 bootstrap.md
+
+# Secrets (tokens, keys)
+.secrets/

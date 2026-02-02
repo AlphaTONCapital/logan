@@ -89,7 +89,7 @@
   "channels": {
     "telegram": {
       "enabled": true,
-      "botToken": "${TELEGRAM_BOT_TOKEN}",
+      "tokenFile": "./.secrets/telegram-token.txt",
       "dmPolicy": "pairing",
       "groupPolicy": "allowlist",
       "groups": {
