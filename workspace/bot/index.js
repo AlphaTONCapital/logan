@@ -5,6 +5,15 @@ const path = require("path");
 const https = require("https");
 const { execSync } = require("child_process");
 
+// Executive Assistant Integration
+const {
+  initializeExecAssistant,
+  registerExecCommands,
+  startExecProcessors,
+  generateDailyBriefing,
+  generateEveningBriefing
+} = require("./exec-assistant");
+
 // Load tokens
 const SECRETS_DIR = path.join(__dirname, "../../.secrets");
 const TOKEN = fs.readFileSync(path.join(SECRETS_DIR, "telegram-token.txt"), "utf8").trim();
@@ -308,6 +317,13 @@ KNOWLEDGE:
 - TON: 104,715 TPS verified, sub-5s finality, 950M+ Telegram users
 - Leadership: Brittany Kaiser (CEO), Enzo Villani (Chairman), Logan Golema (CTO), Yury Mitin (CBDO & Partner)
 - Yury Mitin: CBDO & Partner at AlphaTON, Managing Partner at RSV Capital (Canada). 17+ years in VC & tech entrepreneurship. Led $200M+ in venture/secondary investments (Udemy, eToro, Upgrade, Robinhood, MasterClass, Groq). Ph.D. in Innovation & Entrepreneurship, executive programs at Harvard Business School, UC Berkeley Haas, Ivey Business School. Focus areas: FinTech, Web3/Crypto, EdTech, AI. Background in building incubators, accelerators, and venture partnerships.
+
+CAPABILITIES:
+- Executive Assistant: calendar, tasks, contacts, email, stocks, news, travel, expenses
+- Restaurant reservations via OpenTable (say "I can book that for you!" if asked)
+- Building TON blockchain projects (via /build command in Telegram)
+- Research and information gathering
+- Daily briefings at 7AM and 6PM Portugal time
 
 RULES:
 - Keep responses concise (2-4 sentences)
@@ -1593,6 +1609,17 @@ Try /help for all commands!`;
   else if (lowerText.startsWith("/help")) {
     response = `<b>🤖 Aton Commands</b>
 
+<b>📋 Executive Assistant</b>
+/briefing - Daily executive briefing
+/calendar - Today's meetings & events
+/task - Task management
+/contact - Contact lookup & CRM
+/email - Email management
+/stock - Stock prices & alerts
+/news - News intelligence
+/travel - Travel management
+/expense - Expense tracking
+
 <b>📚 Info & Learning</b>
 /ton - TON blockchain overview
 /tps - Transaction speed stats
@@ -2400,7 +2427,18 @@ function startAutonomousTasks() {
 
 // ============ STARTUP ============
 
+// Initialize Executive Assistant services
+console.log("📋 Initializing Executive Assistant services...");
+const execServices = initializeExecAssistant(db);
+console.log("  ✅ Calendar, Tasks, Contacts, Email");
+console.log("  ✅ Financial, News, Travel, Expenses");
+
+// Register Executive Assistant commands
+registerExecCommands(bot, db);
+console.log("  ✅ Executive commands registered");
+
 // Start bot
+console.log("");
 console.log("🤖 Aton Telegram Bot v2 starting...");
 console.log("📁 Database:", dbPath);
 console.log("");
@@ -2411,6 +2449,63 @@ console.log("  " + (ANTHROPIC_API_KEY ? "✅" : "❌") + " AI idea extraction (C
 console.log("  " + (GITHUB_TOKEN ? "✅" : "❌") + " GitHub issue creation");
 console.log("  ✅ Autonomous posting mode");
 console.log("");
+console.log("Executive Assistant Features:");
+console.log("  ✅ Calendar management (/calendar)");
+console.log("  ✅ Task tracking (/task)");
+console.log("  ✅ Contact CRM (/contact)");
+console.log("  ✅ Email management (/email)");
+console.log("  ✅ Stock monitoring (/stock)");
+console.log("  ✅ News intelligence (/news)");
+console.log("  ✅ Travel management (/travel)");
+console.log("  ✅ Expense tracking (/expense)");
+console.log("  ✅ Daily briefing (/briefing)");
+console.log("");
+
+// Executive briefing scheduler
+function scheduleExecutiveBriefings() {
+  const checkBriefingTime = async () => {
+    const now = new Date();
+    // Convert to Portugal time
+    const ptTime = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Lisbon' }));
+    const hour = ptTime.getHours();
+    const minute = ptTime.getMinutes();
+
+    // Morning briefing at 7:00 AM Portugal time
+    if (hour === 7 && minute === 0) {
+      console.log("📬 Sending morning briefing...");
+      try {
+        const briefing = await generateDailyBriefing(db, {});
+        // Send to Logan's chat (get from first admin user or config)
+        const adminUser = db.prepare("SELECT * FROM users WHERE username = 'logangolema' OR id = 1 LIMIT 1").get();
+        if (adminUser) {
+          await bot.api.sendMessage(adminUser.id, briefing, { parse_mode: "HTML", disable_web_page_preview: true });
+          console.log("✅ Morning briefing sent");
+        }
+      } catch (e) {
+        console.error("Morning briefing error:", e.message);
+      }
+    }
+
+    // Evening briefing at 6:00 PM Portugal time
+    if (hour === 18 && minute === 0) {
+      console.log("📬 Sending evening briefing...");
+      try {
+        const briefing = await generateEveningBriefing(db, {});
+        const adminUser = db.prepare("SELECT * FROM users WHERE username = 'logangolema' OR id = 1 LIMIT 1").get();
+        if (adminUser) {
+          await bot.api.sendMessage(adminUser.id, briefing, { parse_mode: "HTML", disable_web_page_preview: true });
+          console.log("✅ Evening briefing sent");
+        }
+      } catch (e) {
+        console.error("Evening briefing error:", e.message);
+      }
+    }
+  };
+
+  // Check every minute for briefing times
+  setInterval(checkBriefingTime, 60000);
+  console.log("📬 Executive briefing scheduler started (7AM/6PM PT)");
+}
 
 bot.start({
   onStart: (botInfo) => {
@@ -2418,6 +2513,13 @@ bot.start({
 
     // Start autonomous tasks
     startAutonomousTasks();
+
+    // Start Executive Assistant processors
+    const execProcessors = startExecProcessors(db, bot, {});
+    console.log("✅ Executive Assistant processors started");
+
+    // Start briefing scheduler
+    scheduleExecutiveBriefings();
 
     console.log("\nPress Ctrl+C to stop");
   },
