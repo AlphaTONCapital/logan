@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "skills": {
+    "moltbook-interact": {
+      "version": "1.0.1",
+      "installedAt": 1770054079697
+    },
+    "moltbook-ay": {
+      "version": "1.0.0",
+      "installedAt": 1770058418312
+    },
+    "moltbook-curator": {
+      "version": "1.1.0",
+      "installedAt": 1770058436912
+    },
+    "moltbook-registry": {
+      "version": "1.0.3",
+      "installedAt": 1770058442529
+    },
+    "penfield": {
+      "version": "1.0.6",
+      "installedAt": 1770058453209
+    },
+    "agent-wallet": {
+      "version": "1.0.7",
+      "installedAt": 1770058458891
+    },
+    "clawnews": {
+      "version": "0.1.18",
+      "installedAt": 1770058465039
+    },
+    "openclaws": {
+      "version": "1.0.7",
+      "installedAt": 1770058471227
+    },
+    "botcoin-miner": {
+      "version": "3.1.2",
+      "installedAt": 1770058480434
+    },
+    "molttok": {
+      "version": "1.0.0",
+      "installedAt": 1770058489932
+    },
+    "moltspaces": {
+      "version": "1.0.0",
+      "installedAt": 1770058498088
+    },
+    "coding-agent": {
+      "version": "1.0.1",
+      "installedAt": 1770061672072
+    },
+    "github-pr": {
+      "version": "1.0.0",
+      "installedAt": 1770061677417
+    },
+    "tg-miniapp": {
+      "version": "1.0.1",
+      "installedAt": 1770061682949
+    },
+    "agent-builder": {
+      "version": "1.0.0",
+      "installedAt": 1770061694588
+    },
+    "react-expert": {
+      "version": "0.1.0",
+      "installedAt": 1770061699995
+    },
+    "typescript-pro": {
+      "version": "0.1.0",
+      "installedAt": 1770061705886
+    },
+    "telegram-bot": {
+      "version": "1.0.0",
+      "installedAt": 1770061715306
+    },
+    "ai-codemod": {
+      "version": "1.0.1",
+      "installedAt": 1770061720695
+    },
+    "github-action-gen": {
+      "version": "1.0.2",
+      "installedAt": 1770061726451
+    },
+    "ai-ci": {
+      "version": "1.0.1",
+      "installedAt": 1770061902983
+    },
+    "shadcn-ui": {
+      "version": "1.0.0",
+      "installedAt": 1770061908757
+    },
+    "tsconfig-gen": {
+      "version": "1.0.0",
+      "installedAt": 1770061914934
+    }
+  }
+}
