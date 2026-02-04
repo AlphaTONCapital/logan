@@ -1,0 +1,35 @@
+{
+  "name": "polymarket-analytics-bot",
+  "version": "2.0.0",
+  "description": "Production-ready Telegram bot for Polymarket analytics and insights",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node --watch index.js",
+    "test": "node comprehensive-test.js",
+    "validate": "node production-checklist.js",
+    "deploy": "./deploy.sh",
+    "logs": "tail -f logs/*.log"
+  },
+  "dependencies": {
+    "axios": "1.6.0",
+    "node-cron": "3.0.3",
+    "better-sqlite3": "11.5.0",
+    "lodash": "4.17.21",
+    "date-fns": "2.30.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["telegram", "polymarket", "prediction", "analytics", "bot", "production"],
+  "author": "Aton AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/polymarket-analytics-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/polymarket-analytics-bot/issues"
+  },
+  "homepage": "https://github.com/your-org/polymarket-analytics-bot#readme"
+}

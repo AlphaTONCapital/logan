@@ -1,0 +1,19 @@
+2026-02-03T11:47:57.818Z [ERROR] Trending command failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:47:57.818Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:47:57.818Z [ERROR] Command processing failed {"command":"trending","chatId":12345,"error":"Network timeout"}
+2026-02-03T11:47:57.818Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:49:13.256Z [ERROR] Trending command failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:49:13.256Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:49:13.256Z [ERROR] Command processing failed {"command":"trending","chatId":12345,"error":"Network timeout"}
+2026-02-03T11:49:13.256Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:49:13.256Z [ERROR] Failed to send error message {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:50:23.525Z [ERROR] Trending command failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:50:23.525Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:50:23.525Z [ERROR] Command processing failed {"command":"trending","chatId":12345,"error":"Network timeout"}
+2026-02-03T11:50:23.525Z [ERROR] Send message failed {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:50:23.525Z [ERROR] Failed to send error message {"chatId":12345,"error":"Network timeout"}
+2026-02-03T11:51:53.049Z [ERROR] Trending command failed {"chatId":12345,"error":"Simulated API failure"}
+2026-02-03T11:51:53.049Z [ERROR] Send message failed {"chatId":12345,"error":"Simulated API failure"}
+2026-02-03T11:51:53.050Z [ERROR] Command processing failed {"command":"trending","chatId":12345,"error":"Simulated API failure"}
+2026-02-03T11:51:53.050Z [ERROR] Send message failed {"chatId":12345,"error":"Simulated API failure"}
+2026-02-03T11:51:53.050Z [ERROR] Failed to send error message {"chatId":12345,"error":"Simulated API failure"}

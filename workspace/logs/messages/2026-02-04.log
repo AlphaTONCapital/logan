@@ -1,0 +1,1267 @@
+[2026-02-04 00:00:00] Starting message monitor (PID: 5291) - Offset: 87565543
+[2026-02-04 00:00:05] No new Telegram messages
+[2026-02-04 00:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:00:05] Message monitor cycle completed (PID: 5291)
+[2026-02-04 00:02:00] Starting message monitor (PID: 5516) - Offset: 87565543
+[2026-02-04 00:02:05] No new Telegram messages
+[2026-02-04 00:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:02:05] Message monitor cycle completed (PID: 5516)
+[2026-02-04 00:04:00] Starting message monitor (PID: 5761) - Offset: 87565543
+[2026-02-04 00:04:05] No new Telegram messages
+[2026-02-04 00:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:04:05] Message monitor cycle completed (PID: 5761)
+[2026-02-04 00:06:00] Starting message monitor (PID: 5882) - Offset: 87565543
+[2026-02-04 00:06:06] No new Telegram messages
+[2026-02-04 00:06:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:06:06] Message monitor cycle completed (PID: 5882)
+[2026-02-04 00:08:01] Starting message monitor (PID: 6037) - Offset: 87565543
+[2026-02-04 00:08:06] No new Telegram messages
+[2026-02-04 00:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:08:06] Message monitor cycle completed (PID: 6037)
+[2026-02-04 00:10:00] Starting message monitor (PID: 6174) - Offset: 87565543
+[2026-02-04 00:10:05] No new Telegram messages
+[2026-02-04 00:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:10:05] Message monitor cycle completed (PID: 6174)
+[2026-02-04 00:12:00] Starting message monitor (PID: 6347) - Offset: 87565543
+[2026-02-04 00:12:05] No new Telegram messages
+[2026-02-04 00:12:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:12:05] Message monitor cycle completed (PID: 6347)
+[2026-02-04 00:14:01] Starting message monitor (PID: 6585) - Offset: 87565543
+[2026-02-04 00:14:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 00:14:01] Checking iMessages (extended lookback)...
+[2026-02-04 00:14:01] Message monitor cycle completed (PID: 6585)
+[2026-02-04 00:16:00] Starting message monitor (PID: 6728) - Offset: 87565543
+[2026-02-04 00:16:05] No new Telegram messages
+[2026-02-04 00:16:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:16:05] Message monitor cycle completed (PID: 6728)
+[2026-02-04 00:18:01] Starting message monitor (PID: 6869) - Offset: 87565543
+[2026-02-04 00:18:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 00:18:01] Checking iMessages (extended lookback)...
+[2026-02-04 00:18:01] Message monitor cycle completed (PID: 6869)
+[2026-02-04 00:20:00] Starting message monitor (PID: 7001) - Offset: 87565543
+[2026-02-04 00:20:06] No new Telegram messages
+[2026-02-04 00:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:20:06] Message monitor cycle completed (PID: 7001)
+[2026-02-04 00:22:01] Starting message monitor (PID: 7202) - Offset: 87565543
+[2026-02-04 00:22:06] No new Telegram messages
+[2026-02-04 00:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:22:06] Message monitor cycle completed (PID: 7202)
+[2026-02-04 00:24:00] Starting message monitor (PID: 7433) - Offset: 87565543
+[2026-02-04 00:24:06] No new Telegram messages
+[2026-02-04 00:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:24:06] Message monitor cycle completed (PID: 7433)
+[2026-02-04 00:26:00] Starting message monitor (PID: 7570) - Offset: 87565543
+[2026-02-04 00:26:06] No new Telegram messages
+[2026-02-04 00:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:26:06] Message monitor cycle completed (PID: 7570)
+[2026-02-04 00:28:00] Starting message monitor (PID: 7735) - Offset: 87565543
+[2026-02-04 00:28:06] No new Telegram messages
+[2026-02-04 00:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:28:06] Message monitor cycle completed (PID: 7735)
+[2026-02-04 00:30:00] Starting message monitor (PID: 7857) - Offset: 87565543
+[2026-02-04 00:30:06] No new Telegram messages
+[2026-02-04 00:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:30:06] Message monitor cycle completed (PID: 7857)
+[2026-02-04 00:32:00] Starting message monitor (PID: 8056) - Offset: 87565543
+[2026-02-04 00:32:06] No new Telegram messages
+[2026-02-04 00:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:32:06] Message monitor cycle completed (PID: 8056)
+[2026-02-04 00:34:00] Starting message monitor (PID: 8302) - Offset: 87565543
+[2026-02-04 00:34:06] No new Telegram messages
+[2026-02-04 00:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:34:06] Message monitor cycle completed (PID: 8302)
+[2026-02-04 00:36:00] Starting message monitor (PID: 8421) - Offset: 87565543
+[2026-02-04 00:36:06] No new Telegram messages
+[2026-02-04 00:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:36:06] Message monitor cycle completed (PID: 8421)
+[2026-02-04 00:38:00] Starting message monitor (PID: 8577) - Offset: 87565543
+[2026-02-04 00:38:05] No new Telegram messages
+[2026-02-04 00:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:38:06] Message monitor cycle completed (PID: 8577)
+[2026-02-04 00:40:00] Starting message monitor (PID: 8717) - Offset: 87565543
+[2026-02-04 00:40:06] No new Telegram messages
+[2026-02-04 00:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:40:06] Message monitor cycle completed (PID: 8717)
+[2026-02-04 00:42:00] Starting message monitor (PID: 8888) - Offset: 87565543
+[2026-02-04 00:42:06] No new Telegram messages
+[2026-02-04 00:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:42:06] Message monitor cycle completed (PID: 8888)
+[2026-02-04 00:44:00] Starting message monitor (PID: 9129) - Offset: 87565543
+[2026-02-04 00:44:05] No new Telegram messages
+[2026-02-04 00:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:44:06] Message monitor cycle completed (PID: 9129)
+[2026-02-04 00:46:00] Starting message monitor (PID: 9271) - Offset: 87565543
+[2026-02-04 00:46:06] No new Telegram messages
+[2026-02-04 00:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:46:06] Message monitor cycle completed (PID: 9271)
+[2026-02-04 00:48:00] Starting message monitor (PID: 9410) - Offset: 87565543
+[2026-02-04 00:48:06] No new Telegram messages
+[2026-02-04 00:48:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:48:06] Message monitor cycle completed (PID: 9410)
+[2026-02-04 00:50:00] Starting message monitor (PID: 9545) - Offset: 87565543
+[2026-02-04 00:50:06] No new Telegram messages
+[2026-02-04 00:50:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:50:06] Message monitor cycle completed (PID: 9545)
+[2026-02-04 00:52:00] Starting message monitor (PID: 9734) - Offset: 87565543
+[2026-02-04 00:52:06] No new Telegram messages
+[2026-02-04 00:52:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:52:06] Message monitor cycle completed (PID: 9734)
+[2026-02-04 00:54:00] Starting message monitor (PID: 9967) - Offset: 87565543
+[2026-02-04 00:54:05] No new Telegram messages
+[2026-02-04 00:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:54:06] Message monitor cycle completed (PID: 9967)
+[2026-02-04 00:56:00] Starting message monitor (PID: 10103) - Offset: 87565543
+[2026-02-04 00:56:05] No new Telegram messages
+[2026-02-04 00:56:05] Checking iMessages (extended lookback)...
+[2026-02-04 00:56:05] Message monitor cycle completed (PID: 10103)
+[2026-02-04 00:58:00] Starting message monitor (PID: 10257) - Offset: 87565543
+[2026-02-04 00:58:06] No new Telegram messages
+[2026-02-04 00:58:06] Checking iMessages (extended lookback)...
+[2026-02-04 00:58:06] Message monitor cycle completed (PID: 10257)
+[2026-02-04 01:00:00] Starting message monitor (PID: 10374) - Offset: 87565543
+[2026-02-04 01:00:05] No new Telegram messages
+[2026-02-04 01:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:00:06] Message monitor cycle completed (PID: 10374)
+[2026-02-04 01:02:00] Starting message monitor (PID: 10566) - Offset: 87565543
+[2026-02-04 01:02:05] No new Telegram messages
+[2026-02-04 01:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:02:06] Message monitor cycle completed (PID: 10566)
+[2026-02-04 01:04:00] Starting message monitor (PID: 10813) - Offset: 87565543
+[2026-02-04 01:04:06] No new Telegram messages
+[2026-02-04 01:04:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:04:06] Message monitor cycle completed (PID: 10813)
+[2026-02-04 01:06:00] Starting message monitor (PID: 10929) - Offset: 87565543
+[2026-02-04 01:06:05] No new Telegram messages
+[2026-02-04 01:06:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:06:06] Message monitor cycle completed (PID: 10929)
+[2026-02-04 01:08:00] Starting message monitor (PID: 11083) - Offset: 87565543
+[2026-02-04 01:08:05] No new Telegram messages
+[2026-02-04 01:08:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:08:05] Message monitor cycle completed (PID: 11083)
+[2026-02-04 01:10:00] Starting message monitor (PID: 11223) - Offset: 87565543
+[2026-02-04 01:10:05] No new Telegram messages
+[2026-02-04 01:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:10:06] Message monitor cycle completed (PID: 11223)
+[2026-02-04 01:12:00] Starting message monitor (PID: 11386) - Offset: 87565543
+[2026-02-04 01:12:05] No new Telegram messages
+[2026-02-04 01:12:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:12:06] Message monitor cycle completed (PID: 11386)
+[2026-02-04 01:14:00] Starting message monitor (PID: 11634) - Offset: 87565543
+[2026-02-04 01:14:05] No new Telegram messages
+[2026-02-04 01:14:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:14:05] Message monitor cycle completed (PID: 11634)
+[2026-02-04 01:16:00] Starting message monitor (PID: 11774) - Offset: 87565543
+[2026-02-04 01:16:05] No new Telegram messages
+[2026-02-04 01:16:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:16:05] Message monitor cycle completed (PID: 11774)
+[2026-02-04 01:18:01] Starting message monitor (PID: 11912) - Offset: 87565543
+[2026-02-04 01:18:06] No new Telegram messages
+[2026-02-04 01:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:18:06] Message monitor cycle completed (PID: 11912)
+[2026-02-04 01:20:01] Starting message monitor (PID: 12051) - Offset: 87565543
+[2026-02-04 01:20:06] No new Telegram messages
+[2026-02-04 01:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:20:06] Message monitor cycle completed (PID: 12051)
+[2026-02-04 01:22:01] Starting message monitor (PID: 12235) - Offset: 87565543
+[2026-02-04 01:22:06] No new Telegram messages
+[2026-02-04 01:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:22:06] Message monitor cycle completed (PID: 12235)
+[2026-02-04 01:24:00] Starting message monitor (PID: 12470) - Offset: 87565543
+[2026-02-04 01:24:06] No new Telegram messages
+[2026-02-04 01:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:24:06] Message monitor cycle completed (PID: 12470)
+[2026-02-04 01:26:00] Starting message monitor (PID: 12601) - Offset: 87565543
+[2026-02-04 01:26:06] No new Telegram messages
+[2026-02-04 01:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:26:06] Message monitor cycle completed (PID: 12601)
+[2026-02-04 01:28:00] Starting message monitor (PID: 12751) - Offset: 87565543
+[2026-02-04 01:28:06] No new Telegram messages
+[2026-02-04 01:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:28:06] Message monitor cycle completed (PID: 12751)
+[2026-02-04 01:30:00] Starting message monitor (PID: 12890) - Offset: 87565543
+[2026-02-04 01:30:06] No new Telegram messages
+[2026-02-04 01:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:30:06] Message monitor cycle completed (PID: 12890)
+[2026-02-04 01:32:00] Starting message monitor (PID: 13070) - Offset: 87565543
+[2026-02-04 01:32:05] No new Telegram messages
+[2026-02-04 01:32:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:32:06] Message monitor cycle completed (PID: 13070)
+[2026-02-04 01:34:00] Starting message monitor (PID: 13353) - Offset: 87565543
+[2026-02-04 01:34:06] No new Telegram messages
+[2026-02-04 01:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:34:06] Message monitor cycle completed (PID: 13353)
+[2026-02-04 01:36:00] Starting message monitor (PID: 13469) - Offset: 87565543
+[2026-02-04 01:36:05] No new Telegram messages
+[2026-02-04 01:36:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:36:06] Message monitor cycle completed (PID: 13469)
+[2026-02-04 01:38:00] Starting message monitor (PID: 13619) - Offset: 87565543
+[2026-02-04 01:38:05] No new Telegram messages
+[2026-02-04 01:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 01:38:06] Message monitor cycle completed (PID: 13619)
+[2026-02-04 01:40:00] Starting message monitor (PID: 13764) - Offset: 87565543
+[2026-02-04 01:40:06] No new Telegram messages
+[2026-02-04 01:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:40:06] Message monitor cycle completed (PID: 13764)
+[2026-02-04 01:42:00] Starting message monitor (PID: 13928) - Offset: 87565543
+[2026-02-04 01:42:06] No new Telegram messages
+[2026-02-04 01:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:42:06] Message monitor cycle completed (PID: 13928)
+[2026-02-04 01:44:00] Starting message monitor (PID: 14178) - Offset: 87565543
+[2026-02-04 01:44:05] No new Telegram messages
+[2026-02-04 01:44:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:44:06] Message monitor cycle completed (PID: 14178)
+[2026-02-04 01:46:00] Starting message monitor (PID: 14317) - Offset: 87565543
+[2026-02-04 01:46:06] No new Telegram messages
+[2026-02-04 01:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:46:06] Message monitor cycle completed (PID: 14317)
+[2026-02-04 01:48:00] Starting message monitor (PID: 14457) - Offset: 87565543
+[2026-02-04 01:48:06] No new Telegram messages
+[2026-02-04 01:48:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:48:06] Message monitor cycle completed (PID: 14457)
+[2026-02-04 01:50:00] Starting message monitor (PID: 14595) - Offset: 87565543
+[2026-02-04 01:50:06] No new Telegram messages
+[2026-02-04 01:50:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:50:06] Message monitor cycle completed (PID: 14595)
+[2026-02-04 01:52:00] Starting message monitor (PID: 14778) - Offset: 87565543
+[2026-02-04 01:52:06] No new Telegram messages
+[2026-02-04 01:52:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:52:06] Message monitor cycle completed (PID: 14778)
+[2026-02-04 01:54:00] Starting message monitor (PID: 15010) - Offset: 87565543
+[2026-02-04 01:54:06] No new Telegram messages
+[2026-02-04 01:54:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:54:06] Message monitor cycle completed (PID: 15010)
+[2026-02-04 01:56:00] Starting message monitor (PID: 15146) - Offset: 87565543
+[2026-02-04 01:56:06] No new Telegram messages
+[2026-02-04 01:56:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:56:06] Message monitor cycle completed (PID: 15146)
+[2026-02-04 01:58:00] Starting message monitor (PID: 15299) - Offset: 87565543
+[2026-02-04 01:58:06] No new Telegram messages
+[2026-02-04 01:58:06] Checking iMessages (extended lookback)...
+[2026-02-04 01:58:06] Message monitor cycle completed (PID: 15299)
+[2026-02-04 02:00:00] Starting message monitor (PID: 15424) - Offset: 87565543
+[2026-02-04 02:00:06] No new Telegram messages
+[2026-02-04 02:00:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:00:06] Message monitor cycle completed (PID: 15424)
+[2026-02-04 02:02:00] Starting message monitor (PID: 15608) - Offset: 87565543
+[2026-02-04 02:02:05] No new Telegram messages
+[2026-02-04 02:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:02:06] Message monitor cycle completed (PID: 15608)
+[2026-02-04 02:04:00] Starting message monitor (PID: 15858) - Offset: 87565543
+[2026-02-04 02:04:06] No new Telegram messages
+[2026-02-04 02:04:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:04:06] Message monitor cycle completed (PID: 15858)
+[2026-02-04 02:06:00] Starting message monitor (PID: 15977) - Offset: 87565543
+[2026-02-04 02:06:05] No new Telegram messages
+[2026-02-04 02:06:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:06:06] Message monitor cycle completed (PID: 15977)
+[2026-02-04 02:08:00] Starting message monitor (PID: 16142) - Offset: 87565543
+[2026-02-04 02:08:05] No new Telegram messages
+[2026-02-04 02:08:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:08:05] Message monitor cycle completed (PID: 16142)
+[2026-02-04 02:10:00] Starting message monitor (PID: 16288) - Offset: 87565543
+[2026-02-04 02:10:05] No new Telegram messages
+[2026-02-04 02:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:10:06] Message monitor cycle completed (PID: 16288)
+[2026-02-04 02:12:00] Starting message monitor (PID: 16450) - Offset: 87565543
+[2026-02-04 02:12:05] No new Telegram messages
+[2026-02-04 02:12:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:12:06] Message monitor cycle completed (PID: 16450)
+[2026-02-04 02:14:00] Starting message monitor (PID: 16695) - Offset: 87565543
+[2026-02-04 02:14:05] No new Telegram messages
+[2026-02-04 02:14:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:14:05] Message monitor cycle completed (PID: 16695)
+[2026-02-04 02:16:00] Starting message monitor (PID: 16846) - Offset: 87565543
+[2026-02-04 02:16:05] No new Telegram messages
+[2026-02-04 02:16:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:16:05] Message monitor cycle completed (PID: 16846)
+[2026-02-04 02:18:00] Starting message monitor (PID: 16975) - Offset: 87565543
+[2026-02-04 02:18:05] No new Telegram messages
+[2026-02-04 02:18:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:18:05] Message monitor cycle completed (PID: 16975)
+[2026-02-04 02:20:01] Starting message monitor (PID: 17121) - Offset: 87565543
+[2026-02-04 02:20:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 02:20:01] Checking iMessages (extended lookback)...
+[2026-02-04 02:20:01] Message monitor cycle completed (PID: 17121)
+[2026-02-04 02:22:00] Starting message monitor (PID: 17306) - Offset: 87565543
+[2026-02-04 02:22:05] No new Telegram messages
+[2026-02-04 02:22:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:22:05] Message monitor cycle completed (PID: 17306)
+[2026-02-04 02:24:01] Starting message monitor (PID: 17531) - Offset: 87565543
+[2026-02-04 02:24:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 02:24:01] Checking iMessages (extended lookback)...
+[2026-02-04 02:24:01] Message monitor cycle completed (PID: 17531)
+[2026-02-04 02:26:00] Starting message monitor (PID: 17672) - Offset: 87565543
+[2026-02-04 02:26:06] No new Telegram messages
+[2026-02-04 02:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:26:06] Message monitor cycle completed (PID: 17672)
+[2026-02-04 02:28:01] Starting message monitor (PID: 17819) - Offset: 87565543
+[2026-02-04 02:28:06] No new Telegram messages
+[2026-02-04 02:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:28:06] Message monitor cycle completed (PID: 17819)
+[2026-02-04 02:30:00] Starting message monitor (PID: 17953) - Offset: 87565543
+[2026-02-04 02:30:06] No new Telegram messages
+[2026-02-04 02:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:30:06] Message monitor cycle completed (PID: 17953)
+[2026-02-04 02:32:00] Starting message monitor (PID: 18135) - Offset: 87565543
+[2026-02-04 02:32:06] No new Telegram messages
+[2026-02-04 02:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:32:06] Message monitor cycle completed (PID: 18135)
+[2026-02-04 02:34:00] Starting message monitor (PID: 18378) - Offset: 87565543
+[2026-02-04 02:34:06] No new Telegram messages
+[2026-02-04 02:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:34:06] Message monitor cycle completed (PID: 18378)
+[2026-02-04 02:36:00] Starting message monitor (PID: 18503) - Offset: 87565543
+[2026-02-04 02:36:05] No new Telegram messages
+[2026-02-04 02:36:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:36:06] Message monitor cycle completed (PID: 18503)
+[2026-02-04 02:38:00] Starting message monitor (PID: 18646) - Offset: 87565543
+[2026-02-04 02:38:05] No new Telegram messages
+[2026-02-04 02:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:38:06] Message monitor cycle completed (PID: 18646)
+[2026-02-04 02:40:00] Starting message monitor (PID: 18795) - Offset: 87565543
+[2026-02-04 02:40:05] No new Telegram messages
+[2026-02-04 02:40:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:40:06] Message monitor cycle completed (PID: 18795)
+[2026-02-04 02:42:00] Starting message monitor (PID: 18958) - Offset: 87565543
+[2026-02-04 02:42:05] No new Telegram messages
+[2026-02-04 02:42:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:42:06] Message monitor cycle completed (PID: 18958)
+[2026-02-04 02:44:00] Starting message monitor (PID: 19198) - Offset: 87565543
+[2026-02-04 02:44:05] No new Telegram messages
+[2026-02-04 02:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:44:05] Message monitor cycle completed (PID: 19198)
+[2026-02-04 02:46:00] Starting message monitor (PID: 19347) - Offset: 87565543
+[2026-02-04 02:46:05] No new Telegram messages
+[2026-02-04 02:46:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:46:06] Message monitor cycle completed (PID: 19347)
+[2026-02-04 02:48:00] Starting message monitor (PID: 19489) - Offset: 87565543
+[2026-02-04 02:48:05] No new Telegram messages
+[2026-02-04 02:48:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:48:05] Message monitor cycle completed (PID: 19489)
+[2026-02-04 02:50:01] Starting message monitor (PID: 19658) - Offset: 87565543
+[2026-02-04 02:50:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 02:50:01] Checking iMessages (extended lookback)...
+[2026-02-04 02:50:01] Message monitor cycle completed (PID: 19658)
+[2026-02-04 02:52:00] Starting message monitor (PID: 19840) - Offset: 87565543
+[2026-02-04 02:52:05] No new Telegram messages
+[2026-02-04 02:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 02:52:05] Message monitor cycle completed (PID: 19840)
+[2026-02-04 02:54:01] Starting message monitor (PID: 20072) - Offset: 87565543
+[2026-02-04 02:54:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 02:54:01] Checking iMessages (extended lookback)...
+[2026-02-04 02:54:01] Message monitor cycle completed (PID: 20072)
+[2026-02-04 02:56:01] Starting message monitor (PID: 20215) - Offset: 87565543
+[2026-02-04 02:56:06] No new Telegram messages
+[2026-02-04 02:56:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:56:06] Message monitor cycle completed (PID: 20215)
+[2026-02-04 02:58:01] Starting message monitor (PID: 20365) - Offset: 87565543
+[2026-02-04 02:58:06] No new Telegram messages
+[2026-02-04 02:58:06] Checking iMessages (extended lookback)...
+[2026-02-04 02:58:06] Message monitor cycle completed (PID: 20365)
+[2026-02-04 03:00:01] Starting message monitor (PID: 20503) - Offset: 87565543
+[2026-02-04 03:00:06] No new Telegram messages
+[2026-02-04 03:00:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:00:06] Message monitor cycle completed (PID: 20503)
+[2026-02-04 03:02:00] Starting message monitor (PID: 20721) - Offset: 87565543
+[2026-02-04 03:02:06] No new Telegram messages
+[2026-02-04 03:02:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:02:06] Message monitor cycle completed (PID: 20721)
+[2026-02-04 03:04:01] Starting message monitor (PID: 20968) - Offset: 87565543
+[2026-02-04 03:04:06] No new Telegram messages
+[2026-02-04 03:04:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:04:06] Message monitor cycle completed (PID: 20968)
+[2026-02-04 03:06:00] Starting message monitor (PID: 21093) - Offset: 87565543
+[2026-02-04 03:06:06] No new Telegram messages
+[2026-02-04 03:06:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:06:06] Message monitor cycle completed (PID: 21093)
+[2026-02-04 03:08:00] Starting message monitor (PID: 21239) - Offset: 87565543
+[2026-02-04 03:08:06] No new Telegram messages
+[2026-02-04 03:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:08:06] Message monitor cycle completed (PID: 21239)
+[2026-02-04 03:10:01] Starting message monitor (PID: 21386) - Offset: 87565543
+[2026-02-04 03:10:06] No new Telegram messages
+[2026-02-04 03:10:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:10:06] Message monitor cycle completed (PID: 21386)
+[2026-02-04 03:12:00] Starting message monitor (PID: 21554) - Offset: 87565543
+[2026-02-04 03:12:06] No new Telegram messages
+[2026-02-04 03:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:12:06] Message monitor cycle completed (PID: 21554)
+[2026-02-04 03:14:00] Starting message monitor (PID: 21797) - Offset: 87565543
+[2026-02-04 03:14:06] No new Telegram messages
+[2026-02-04 03:14:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:14:06] Message monitor cycle completed (PID: 21797)
+[2026-02-04 03:16:00] Starting message monitor (PID: 21949) - Offset: 87565543
+[2026-02-04 03:16:06] No new Telegram messages
+[2026-02-04 03:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:16:06] Message monitor cycle completed (PID: 21949)
+[2026-02-04 03:18:00] Starting message monitor (PID: 22075) - Offset: 87565543
+[2026-02-04 03:18:06] No new Telegram messages
+[2026-02-04 03:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:18:06] Message monitor cycle completed (PID: 22075)
+[2026-02-04 03:20:00] Starting message monitor (PID: 22218) - Offset: 87565543
+[2026-02-04 03:20:06] No new Telegram messages
+[2026-02-04 03:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:20:06] Message monitor cycle completed (PID: 22218)
+[2026-02-04 03:22:00] Starting message monitor (PID: 22400) - Offset: 87565543
+[2026-02-04 03:22:06] No new Telegram messages
+[2026-02-04 03:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:22:06] Message monitor cycle completed (PID: 22400)
+[2026-02-04 03:24:00] Starting message monitor (PID: 22626) - Offset: 87565543
+[2026-02-04 03:24:06] No new Telegram messages
+[2026-02-04 03:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:24:06] Message monitor cycle completed (PID: 22626)
+[2026-02-04 03:26:00] Starting message monitor (PID: 22771) - Offset: 87565543
+[2026-02-04 03:26:06] No new Telegram messages
+[2026-02-04 03:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:26:06] Message monitor cycle completed (PID: 22771)
+[2026-02-04 03:28:00] Starting message monitor (PID: 22920) - Offset: 87565543
+[2026-02-04 03:28:06] No new Telegram messages
+[2026-02-04 03:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:28:06] Message monitor cycle completed (PID: 22920)
+[2026-02-04 03:30:00] Starting message monitor (PID: 23048) - Offset: 87565543
+[2026-02-04 03:30:06] No new Telegram messages
+[2026-02-04 03:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:30:06] Message monitor cycle completed (PID: 23048)
+[2026-02-04 03:32:00] Starting message monitor (PID: 23242) - Offset: 87565543
+[2026-02-04 03:32:06] No new Telegram messages
+[2026-02-04 03:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:32:06] Message monitor cycle completed (PID: 23242)
+[2026-02-04 03:34:00] Starting message monitor (PID: 23480) - Offset: 87565543
+[2026-02-04 03:34:06] No new Telegram messages
+[2026-02-04 03:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:34:06] Message monitor cycle completed (PID: 23480)
+[2026-02-04 03:36:00] Starting message monitor (PID: 23611) - Offset: 87565543
+[2026-02-04 03:36:06] No new Telegram messages
+[2026-02-04 03:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:36:06] Message monitor cycle completed (PID: 23611)
+[2026-02-04 03:38:00] Starting message monitor (PID: 23760) - Offset: 87565543
+[2026-02-04 03:38:05] No new Telegram messages
+[2026-02-04 03:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:38:06] Message monitor cycle completed (PID: 23760)
+[2026-02-04 03:40:00] Starting message monitor (PID: 23906) - Offset: 87565543
+[2026-02-04 03:40:06] No new Telegram messages
+[2026-02-04 03:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:40:06] Message monitor cycle completed (PID: 23906)
+[2026-02-04 03:42:00] Starting message monitor (PID: 24071) - Offset: 87565543
+[2026-02-04 03:42:06] No new Telegram messages
+[2026-02-04 03:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:42:06] Message monitor cycle completed (PID: 24071)
+[2026-02-04 03:44:00] Starting message monitor (PID: 24253) - Offset: 87565543
+[2026-02-04 03:44:05] No new Telegram messages
+[2026-02-04 03:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:44:06] Message monitor cycle completed (PID: 24253)
+[2026-02-04 03:46:00] Starting message monitor (PID: 24462) - Offset: 87565543
+[2026-02-04 03:46:06] No new Telegram messages
+[2026-02-04 03:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 03:46:06] Message monitor cycle completed (PID: 24462)
+[2026-02-04 03:48:00] Starting message monitor (PID: 24585) - Offset: 87565543
+[2026-02-04 03:48:05] No new Telegram messages
+[2026-02-04 03:48:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:48:05] Message monitor cycle completed (PID: 24585)
+[2026-02-04 03:50:00] Starting message monitor (PID: 24725) - Offset: 87565543
+[2026-02-04 03:50:05] No new Telegram messages
+[2026-02-04 03:50:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:50:05] Message monitor cycle completed (PID: 24725)
+[2026-02-04 03:52:00] Starting message monitor (PID: 24913) - Offset: 87565543
+[2026-02-04 03:52:05] No new Telegram messages
+[2026-02-04 03:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:52:05] Message monitor cycle completed (PID: 24913)
+[2026-02-04 03:54:00] Starting message monitor (PID: 25032) - Offset: 87565543
+[2026-02-04 03:54:05] No new Telegram messages
+[2026-02-04 03:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:54:05] Message monitor cycle completed (PID: 25032)
+[2026-02-04 03:56:01] Starting message monitor (PID: 25282) - Offset: 87565543
+[2026-02-04 03:56:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 03:56:01] Checking iMessages (extended lookback)...
+[2026-02-04 03:56:01] Message monitor cycle completed (PID: 25282)
+[2026-02-04 03:58:00] Starting message monitor (PID: 25427) - Offset: 87565543
+[2026-02-04 03:58:05] No new Telegram messages
+[2026-02-04 03:58:05] Checking iMessages (extended lookback)...
+[2026-02-04 03:58:05] Message monitor cycle completed (PID: 25427)
+[2026-02-04 04:00:00] Starting message monitor (PID: 25552) - Offset: 87565543
+[2026-02-04 04:00:05] No new Telegram messages
+[2026-02-04 04:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:00:05] Message monitor cycle completed (PID: 25552)
+[2026-02-04 04:02:01] Starting message monitor (PID: 25737) - Offset: 87565543
+[2026-02-04 04:02:06] No new Telegram messages
+[2026-02-04 04:02:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:02:06] Message monitor cycle completed (PID: 25737)
+[2026-02-04 04:04:00] Starting message monitor (PID: 25875) - Offset: 87565543
+[2026-02-04 04:04:05] No new Telegram messages
+[2026-02-04 04:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:04:05] Message monitor cycle completed (PID: 25875)
+[2026-02-04 04:06:01] Starting message monitor (PID: 26112) - Offset: 87565543
+[2026-02-04 04:06:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 04:06:01] Checking iMessages (extended lookback)...
+[2026-02-04 04:06:01] Message monitor cycle completed (PID: 26112)
+[2026-02-04 04:08:01] Starting message monitor (PID: 26256) - Offset: 87565543
+[2026-02-04 04:08:06] No new Telegram messages
+[2026-02-04 04:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:08:06] Message monitor cycle completed (PID: 26256)
+[2026-02-04 04:10:00] Starting message monitor (PID: 26397) - Offset: 87565543
+[2026-02-04 04:10:05] No new Telegram messages
+[2026-02-04 04:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:10:05] Message monitor cycle completed (PID: 26397)
+[2026-02-04 04:12:00] Starting message monitor (PID: 26565) - Offset: 87565543
+[2026-02-04 04:12:05] No new Telegram messages
+[2026-02-04 04:12:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:12:05] Message monitor cycle completed (PID: 26565)
+[2026-02-04 04:14:00] Starting message monitor (PID: 26814) - Offset: 87565543
+[2026-02-04 04:14:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 04:14:01] Checking iMessages (extended lookback)...
+[2026-02-04 04:14:01] Message monitor cycle completed (PID: 26814)
+[2026-02-04 04:16:01] Starting message monitor (PID: 26965) - Offset: 87565543
+[2026-02-04 04:16:06] No new Telegram messages
+[2026-02-04 04:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:16:06] Message monitor cycle completed (PID: 26965)
+[2026-02-04 04:18:01] Starting message monitor (PID: 27090) - Offset: 87565543
+[2026-02-04 04:18:06] No new Telegram messages
+[2026-02-04 04:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:18:06] Message monitor cycle completed (PID: 27090)
+[2026-02-04 04:20:00] Starting message monitor (PID: 27238) - Offset: 87565543
+[2026-02-04 04:20:06] No new Telegram messages
+[2026-02-04 04:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:20:06] Message monitor cycle completed (PID: 27238)
+[2026-02-04 04:22:01] Starting message monitor (PID: 27431) - Offset: 87565543
+[2026-02-04 04:22:06] No new Telegram messages
+[2026-02-04 04:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:22:06] Message monitor cycle completed (PID: 27431)
+[2026-02-04 04:24:00] Starting message monitor (PID: 27551) - Offset: 87565543
+[2026-02-04 04:24:06] No new Telegram messages
+[2026-02-04 04:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:24:06] Message monitor cycle completed (PID: 27551)
+[2026-02-04 04:26:00] Starting message monitor (PID: 27804) - Offset: 87565543
+[2026-02-04 04:26:06] No new Telegram messages
+[2026-02-04 04:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:26:06] Message monitor cycle completed (PID: 27804)
+[2026-02-04 04:28:00] Starting message monitor (PID: 27950) - Offset: 87565543
+[2026-02-04 04:28:06] No new Telegram messages
+[2026-02-04 04:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:28:06] Message monitor cycle completed (PID: 27950)
+[2026-02-04 04:30:00] Starting message monitor (PID: 28083) - Offset: 87565543
+[2026-02-04 04:30:06] No new Telegram messages
+[2026-02-04 04:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:30:06] Message monitor cycle completed (PID: 28083)
+[2026-02-04 04:32:00] Starting message monitor (PID: 28270) - Offset: 87565543
+[2026-02-04 04:32:06] No new Telegram messages
+[2026-02-04 04:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:32:06] Message monitor cycle completed (PID: 28270)
+[2026-02-04 04:34:00] Starting message monitor (PID: 28407) - Offset: 87565543
+[2026-02-04 04:34:06] No new Telegram messages
+[2026-02-04 04:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 04:34:06] Message monitor cycle completed (PID: 28407)
+[2026-02-04 04:36:00] Starting message monitor (PID: 28641) - Offset: 87565543
+[2026-02-04 04:36:05] No new Telegram messages
+[2026-02-04 04:36:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:36:06] Message monitor cycle completed (PID: 28641)
+[2026-02-04 04:38:00] Starting message monitor (PID: 28792) - Offset: 87565543
+[2026-02-04 04:38:05] No new Telegram messages
+[2026-02-04 04:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:38:05] Message monitor cycle completed (PID: 28792)
+[2026-02-04 04:40:00] Starting message monitor (PID: 28931) - Offset: 87565543
+[2026-02-04 04:40:05] No new Telegram messages
+[2026-02-04 04:40:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:40:06] Message monitor cycle completed (PID: 28931)
+[2026-02-04 04:42:00] Starting message monitor (PID: 29108) - Offset: 87565543
+[2026-02-04 04:42:05] No new Telegram messages
+[2026-02-04 04:42:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:42:05] Message monitor cycle completed (PID: 29108)
+[2026-02-04 04:44:00] Starting message monitor (PID: 29244) - Offset: 87565543
+[2026-02-04 04:44:05] No new Telegram messages
+[2026-02-04 04:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:44:05] Message monitor cycle completed (PID: 29244)
+[2026-02-04 04:46:00] Starting message monitor (PID: 29498) - Offset: 87565543
+[2026-02-04 04:46:05] No new Telegram messages
+[2026-02-04 04:46:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:46:06] Message monitor cycle completed (PID: 29498)
+[2026-02-04 04:48:00] Starting message monitor (PID: 29626) - Offset: 87565543
+[2026-02-04 04:48:05] No new Telegram messages
+[2026-02-04 04:48:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:48:05] Message monitor cycle completed (PID: 29626)
+[2026-02-04 04:50:01] Starting message monitor (PID: 29766) - Offset: 87565543
+[2026-02-04 04:50:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 04:50:01] Checking iMessages (extended lookback)...
+[2026-02-04 04:50:01] Message monitor cycle completed (PID: 29766)
+[2026-02-04 04:52:00] Starting message monitor (PID: 29951) - Offset: 87565543
+[2026-02-04 04:52:05] No new Telegram messages
+[2026-02-04 04:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:52:05] Message monitor cycle completed (PID: 29951)
+[2026-02-04 04:54:00] Starting message monitor (PID: 30066) - Offset: 87565543
+[2026-02-04 04:54:05] No new Telegram messages
+[2026-02-04 04:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:54:05] Message monitor cycle completed (PID: 30066)
+[2026-02-04 04:56:01] Starting message monitor (PID: 30318) - Offset: 87565543
+[2026-02-04 04:56:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 04:56:01] Checking iMessages (extended lookback)...
+[2026-02-04 04:56:01] Message monitor cycle completed (PID: 30318)
+[2026-02-04 04:58:00] Starting message monitor (PID: 30471) - Offset: 87565543
+[2026-02-04 04:58:05] No new Telegram messages
+[2026-02-04 04:58:05] Checking iMessages (extended lookback)...
+[2026-02-04 04:58:05] Message monitor cycle completed (PID: 30471)
+[2026-02-04 05:00:01] Starting message monitor (PID: 30594) - Offset: 87565543
+[2026-02-04 05:00:06] No new Telegram messages
+[2026-02-04 05:00:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:00:06] Message monitor cycle completed (PID: 30594)
+[2026-02-04 05:02:01] Starting message monitor (PID: 30780) - Offset: 87565543
+[2026-02-04 05:02:06] No new Telegram messages
+[2026-02-04 05:02:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:02:06] Message monitor cycle completed (PID: 30780)
+[2026-02-04 05:04:00] Starting message monitor (PID: 30917) - Offset: 87565543
+[2026-02-04 05:04:05] No new Telegram messages
+[2026-02-04 05:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:04:05] Message monitor cycle completed (PID: 30917)
+[2026-02-04 05:06:01] Starting message monitor (PID: 31148) - Offset: 87565543
+[2026-02-04 05:06:06] No new Telegram messages
+[2026-02-04 05:06:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:06:06] Message monitor cycle completed (PID: 31148)
+[2026-02-04 05:08:00] Starting message monitor (PID: 31295) - Offset: 87565543
+[2026-02-04 05:08:06] No new Telegram messages
+[2026-02-04 05:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:08:06] Message monitor cycle completed (PID: 31295)
+[2026-02-04 05:10:01] Starting message monitor (PID: 31432) - Offset: 87565543
+[2026-02-04 05:10:06] No new Telegram messages
+[2026-02-04 05:10:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:10:06] Message monitor cycle completed (PID: 31432)
+[2026-02-04 05:12:01] Starting message monitor (PID: 31602) - Offset: 87565543
+[2026-02-04 05:12:06] No new Telegram messages
+[2026-02-04 05:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:12:06] Message monitor cycle completed (PID: 31602)
+[2026-02-04 05:14:00] Starting message monitor (PID: 31739) - Offset: 87565543
+[2026-02-04 05:14:06] No new Telegram messages
+[2026-02-04 05:14:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:14:06] Message monitor cycle completed (PID: 31739)
+[2026-02-04 05:16:01] Starting message monitor (PID: 31996) - Offset: 87565543
+[2026-02-04 05:16:06] No new Telegram messages
+[2026-02-04 05:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:16:06] Message monitor cycle completed (PID: 31996)
+[2026-02-04 05:18:00] Starting message monitor (PID: 32127) - Offset: 87565543
+[2026-02-04 05:18:06] No new Telegram messages
+[2026-02-04 05:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:18:06] Message monitor cycle completed (PID: 32127)
+[2026-02-04 05:20:00] Starting message monitor (PID: 32264) - Offset: 87565543
+[2026-02-04 05:20:06] No new Telegram messages
+[2026-02-04 05:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:20:06] Message monitor cycle completed (PID: 32264)
+[2026-02-04 05:22:01] Starting message monitor (PID: 32454) - Offset: 87565543
+[2026-02-04 05:22:06] No new Telegram messages
+[2026-02-04 05:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:22:06] Message monitor cycle completed (PID: 32454)
+[2026-02-04 05:24:00] Starting message monitor (PID: 32572) - Offset: 87565543
+[2026-02-04 05:24:06] No new Telegram messages
+[2026-02-04 05:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:24:06] Message monitor cycle completed (PID: 32572)
+[2026-02-04 05:26:00] Starting message monitor (PID: 32824) - Offset: 87565543
+[2026-02-04 05:26:06] No new Telegram messages
+[2026-02-04 05:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:26:06] Message monitor cycle completed (PID: 32824)
+[2026-02-04 05:28:01] Starting message monitor (PID: 32987) - Offset: 87565543
+[2026-02-04 05:28:06] No new Telegram messages
+[2026-02-04 05:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:28:06] Message monitor cycle completed (PID: 32987)
+[2026-02-04 05:30:00] Starting message monitor (PID: 33110) - Offset: 87565543
+[2026-02-04 05:30:06] No new Telegram messages
+[2026-02-04 05:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:30:06] Message monitor cycle completed (PID: 33110)
+[2026-02-04 05:32:00] Starting message monitor (PID: 33303) - Offset: 87565543
+[2026-02-04 05:32:06] No new Telegram messages
+[2026-02-04 05:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:32:06] Message monitor cycle completed (PID: 33303)
+[2026-02-04 05:34:01] Starting message monitor (PID: 33440) - Offset: 87565543
+[2026-02-04 05:34:06] No new Telegram messages
+[2026-02-04 05:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:34:06] Message monitor cycle completed (PID: 33440)
+[2026-02-04 05:36:00] Starting message monitor (PID: 33672) - Offset: 87565543
+[2026-02-04 05:36:06] No new Telegram messages
+[2026-02-04 05:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:36:06] Message monitor cycle completed (PID: 33672)
+[2026-02-04 05:38:00] Starting message monitor (PID: 33822) - Offset: 87565543
+[2026-02-04 05:38:06] No new Telegram messages
+[2026-02-04 05:38:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:38:06] Message monitor cycle completed (PID: 33822)
+[2026-02-04 05:40:00] Starting message monitor (PID: 33960) - Offset: 87565543
+[2026-02-04 05:40:06] No new Telegram messages
+[2026-02-04 05:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:40:06] Message monitor cycle completed (PID: 33960)
+[2026-02-04 05:42:00] Starting message monitor (PID: 34125) - Offset: 87565543
+[2026-02-04 05:42:06] No new Telegram messages
+[2026-02-04 05:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 05:42:06] Message monitor cycle completed (PID: 34125)
+[2026-02-04 05:44:00] Starting message monitor (PID: 34268) - Offset: 87565543
+[2026-02-04 05:44:05] No new Telegram messages
+[2026-02-04 05:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:44:06] Message monitor cycle completed (PID: 34268)
+[2026-02-04 05:46:00] Starting message monitor (PID: 34523) - Offset: 87565543
+[2026-02-04 05:46:05] No new Telegram messages
+[2026-02-04 05:46:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:46:06] Message monitor cycle completed (PID: 34523)
+[2026-02-04 05:48:00] Starting message monitor (PID: 34662) - Offset: 87565543
+[2026-02-04 05:48:05] No new Telegram messages
+[2026-02-04 05:48:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:48:05] Message monitor cycle completed (PID: 34662)
+[2026-02-04 05:50:00] Starting message monitor (PID: 34803) - Offset: 87565543
+[2026-02-04 05:50:05] No new Telegram messages
+[2026-02-04 05:50:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:50:05] Message monitor cycle completed (PID: 34803)
+[2026-02-04 05:52:00] Starting message monitor (PID: 34989) - Offset: 87565543
+[2026-02-04 05:52:05] No new Telegram messages
+[2026-02-04 05:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:52:05] Message monitor cycle completed (PID: 34989)
+[2026-02-04 05:54:00] Starting message monitor (PID: 35113) - Offset: 87565543
+[2026-02-04 05:54:05] No new Telegram messages
+[2026-02-04 05:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:54:05] Message monitor cycle completed (PID: 35113)
+[2026-02-04 05:56:01] Starting message monitor (PID: 35360) - Offset: 87565543
+[2026-02-04 05:56:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 05:56:01] Checking iMessages (extended lookback)...
+[2026-02-04 05:56:01] Message monitor cycle completed (PID: 35360)
+[2026-02-04 05:58:00] Starting message monitor (PID: 35511) - Offset: 87565543
+[2026-02-04 05:58:05] No new Telegram messages
+[2026-02-04 05:58:05] Checking iMessages (extended lookback)...
+[2026-02-04 05:58:05] Message monitor cycle completed (PID: 35511)
+[2026-02-04 06:00:01] Starting message monitor (PID: 35630) - Offset: 87565543
+[2026-02-04 06:00:06] No new Telegram messages
+[2026-02-04 06:00:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:00:06] Message monitor cycle completed (PID: 35630)
+[2026-02-04 06:02:00] Starting message monitor (PID: 35816) - Offset: 87565543
+[2026-02-04 06:02:06] No new Telegram messages
+[2026-02-04 06:02:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:02:06] Message monitor cycle completed (PID: 35816)
+[2026-02-04 06:04:01] Starting message monitor (PID: 35961) - Offset: 87565543
+[2026-02-04 06:04:06] No new Telegram messages
+[2026-02-04 06:04:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:04:06] Message monitor cycle completed (PID: 35961)
+[2026-02-04 06:06:00] Starting message monitor (PID: 36189) - Offset: 87565543
+[2026-02-04 06:06:06] No new Telegram messages
+[2026-02-04 06:06:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:06:06] Message monitor cycle completed (PID: 36189)
+[2026-02-04 06:08:00] Starting message monitor (PID: 36342) - Offset: 87565543
+[2026-02-04 06:08:06] No new Telegram messages
+[2026-02-04 06:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:08:06] Message monitor cycle completed (PID: 36342)
+[2026-02-04 06:10:00] Starting message monitor (PID: 36481) - Offset: 87565543
+[2026-02-04 06:10:06] No new Telegram messages
+[2026-02-04 06:10:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:10:06] Message monitor cycle completed (PID: 36481)
+[2026-02-04 06:12:00] Starting message monitor (PID: 36649) - Offset: 87565543
+[2026-02-04 06:12:06] No new Telegram messages
+[2026-02-04 06:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:12:06] Message monitor cycle completed (PID: 36649)
+[2026-02-04 06:14:00] Starting message monitor (PID: 36790) - Offset: 87565543
+[2026-02-04 06:14:05] No new Telegram messages
+[2026-02-04 06:14:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:14:06] Message monitor cycle completed (PID: 36790)
+[2026-02-04 06:16:00] Starting message monitor (PID: 37043) - Offset: 87565543
+[2026-02-04 06:16:06] No new Telegram messages
+[2026-02-04 06:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:16:06] Message monitor cycle completed (PID: 37043)
+[2026-02-04 06:18:00] Starting message monitor (PID: 37179) - Offset: 87565543
+[2026-02-04 06:18:06] No new Telegram messages
+[2026-02-04 06:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:18:06] Message monitor cycle completed (PID: 37179)
+[2026-02-04 06:20:00] Starting message monitor (PID: 37317) - Offset: 87565543
+[2026-02-04 06:20:05] No new Telegram messages
+[2026-02-04 06:20:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:20:06] Message monitor cycle completed (PID: 37317)
+[2026-02-04 06:22:00] Starting message monitor (PID: 37503) - Offset: 87565543
+[2026-02-04 06:22:05] No new Telegram messages
+[2026-02-04 06:22:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:22:06] Message monitor cycle completed (PID: 37503)
+[2026-02-04 06:24:00] Starting message monitor (PID: 37629) - Offset: 87565543
+[2026-02-04 06:24:05] No new Telegram messages
+[2026-02-04 06:24:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:24:05] Message monitor cycle completed (PID: 37629)
+[2026-02-04 06:26:00] Starting message monitor (PID: 37875) - Offset: 87565543
+[2026-02-04 06:26:05] No new Telegram messages
+[2026-02-04 06:26:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:26:05] Message monitor cycle completed (PID: 37875)
+[2026-02-04 06:28:00] Starting message monitor (PID: 38030) - Offset: 87565543
+[2026-02-04 06:28:05] No new Telegram messages
+[2026-02-04 06:28:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:28:05] Message monitor cycle completed (PID: 38030)
+[2026-02-04 06:30:01] Starting message monitor (PID: 38151) - Offset: 87565543
+[2026-02-04 06:30:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 06:30:01] Checking iMessages (extended lookback)...
+[2026-02-04 06:30:01] Message monitor cycle completed (PID: 38151)
+[2026-02-04 06:32:01] Starting message monitor (PID: 38337) - Offset: 87565543
+[2026-02-04 06:32:06] No new Telegram messages
+[2026-02-04 06:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:32:06] Message monitor cycle completed (PID: 38337)
+[2026-02-04 06:34:00] Starting message monitor (PID: 38481) - Offset: 87565543
+[2026-02-04 06:34:05] No new Telegram messages
+[2026-02-04 06:34:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:34:05] Message monitor cycle completed (PID: 38481)
+[2026-02-04 06:36:01] Starting message monitor (PID: 38709) - Offset: 87565543
+[2026-02-04 06:36:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 06:36:01] Checking iMessages (extended lookback)...
+[2026-02-04 06:36:01] Message monitor cycle completed (PID: 38709)
+[2026-02-04 06:38:01] Starting message monitor (PID: 38861) - Offset: 87565543
+[2026-02-04 06:38:06] No new Telegram messages
+[2026-02-04 06:38:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:38:06] Message monitor cycle completed (PID: 38861)
+[2026-02-04 06:40:01] Starting message monitor (PID: 38999) - Offset: 87565543
+[2026-02-04 06:40:06] No new Telegram messages
+[2026-02-04 06:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:40:06] Message monitor cycle completed (PID: 38999)
+[2026-02-04 06:42:01] Starting message monitor (PID: 39167) - Offset: 87565543
+[2026-02-04 06:42:06] No new Telegram messages
+[2026-02-04 06:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:42:06] Message monitor cycle completed (PID: 39167)
+[2026-02-04 06:44:00] Starting message monitor (PID: 39310) - Offset: 87565543
+[2026-02-04 06:44:06] No new Telegram messages
+[2026-02-04 06:44:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:44:06] Message monitor cycle completed (PID: 39310)
+[2026-02-04 06:46:00] Starting message monitor (PID: 39566) - Offset: 87565543
+[2026-02-04 06:46:06] No new Telegram messages
+[2026-02-04 06:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:46:06] Message monitor cycle completed (PID: 39566)
+[2026-02-04 06:48:00] Starting message monitor (PID: 39787) - Offset: 87565543
+[2026-02-04 06:48:06] No new Telegram messages
+[2026-02-04 06:48:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:48:06] Message monitor cycle completed (PID: 39787)
+[2026-02-04 06:50:00] Starting message monitor (PID: 39922) - Offset: 87565543
+[2026-02-04 06:50:06] No new Telegram messages
+[2026-02-04 06:50:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:50:06] Message monitor cycle completed (PID: 39922)
+[2026-02-04 06:52:00] Starting message monitor (PID: 40103) - Offset: 87565543
+[2026-02-04 06:52:06] No new Telegram messages
+[2026-02-04 06:52:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:52:06] Message monitor cycle completed (PID: 40103)
+[2026-02-04 06:54:00] Starting message monitor (PID: 40231) - Offset: 87565543
+[2026-02-04 06:54:06] No new Telegram messages
+[2026-02-04 06:54:06] Checking iMessages (extended lookback)...
+[2026-02-04 06:54:06] Message monitor cycle completed (PID: 40231)
+[2026-02-04 06:56:00] Starting message monitor (PID: 40476) - Offset: 87565543
+[2026-02-04 06:56:05] No new Telegram messages
+[2026-02-04 06:56:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:56:06] Message monitor cycle completed (PID: 40476)
+[2026-02-04 06:58:00] Starting message monitor (PID: 40623) - Offset: 87565543
+[2026-02-04 06:58:05] No new Telegram messages
+[2026-02-04 06:58:05] Checking iMessages (extended lookback)...
+[2026-02-04 06:58:06] Message monitor cycle completed (PID: 40623)
+[2026-02-04 07:00:00] Starting message monitor (PID: 40749) - Offset: 87565543
+[2026-02-04 07:00:05] No new Telegram messages
+[2026-02-04 07:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:00:05] Message monitor cycle completed (PID: 40749)
+[2026-02-04 07:02:00] Starting message monitor (PID: 40927) - Offset: 87565543
+[2026-02-04 07:02:05] No new Telegram messages
+[2026-02-04 07:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:02:05] Message monitor cycle completed (PID: 40927)
+[2026-02-04 07:04:00] Starting message monitor (PID: 41073) - Offset: 87565543
+[2026-02-04 07:04:05] No new Telegram messages
+[2026-02-04 07:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:04:06] Message monitor cycle completed (PID: 41073)
+[2026-02-04 07:06:00] Starting message monitor (PID: 41302) - Offset: 87565543
+[2026-02-04 07:06:05] No new Telegram messages
+[2026-02-04 07:06:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:06:05] Message monitor cycle completed (PID: 41302)
+[2026-02-04 07:08:00] Starting message monitor (PID: 41456) - Offset: 87565543
+[2026-02-04 07:08:05] No new Telegram messages
+[2026-02-04 07:08:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:08:05] Message monitor cycle completed (PID: 41456)
+[2026-02-04 07:10:00] Starting message monitor (PID: 41597) - Offset: 87565543
+[2026-02-04 07:10:05] No new Telegram messages
+[2026-02-04 07:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:10:05] Message monitor cycle completed (PID: 41597)
+[2026-02-04 07:12:00] Starting message monitor (PID: 41759) - Offset: 87565543
+[2026-02-04 07:12:05] No new Telegram messages
+[2026-02-04 07:12:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:12:05] Message monitor cycle completed (PID: 41759)
+[2026-02-04 07:14:01] Starting message monitor (PID: 41902) - Offset: 87565543
+[2026-02-04 07:14:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 07:14:01] Checking iMessages (extended lookback)...
+[2026-02-04 07:14:01] Message monitor cycle completed (PID: 41902)
+[2026-02-04 07:16:00] Starting message monitor (PID: 42154) - Offset: 87565543
+[2026-02-04 07:16:05] No new Telegram messages
+[2026-02-04 07:16:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:16:05] Message monitor cycle completed (PID: 42154)
+[2026-02-04 07:18:01] Starting message monitor (PID: 42287) - Offset: 87565543
+[2026-02-04 07:18:06] No new Telegram messages
+[2026-02-04 07:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:18:06] Message monitor cycle completed (PID: 42287)
+[2026-02-04 07:20:00] Starting message monitor (PID: 42434) - Offset: 87565543
+[2026-02-04 07:20:06] No new Telegram messages
+[2026-02-04 07:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:20:06] Message monitor cycle completed (PID: 42434)
+[2026-02-04 07:22:01] Starting message monitor (PID: 42617) - Offset: 87565543
+[2026-02-04 07:22:06] No new Telegram messages
+[2026-02-04 07:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:22:06] Message monitor cycle completed (PID: 42617)
+[2026-02-04 07:24:00] Starting message monitor (PID: 42743) - Offset: 87565543
+[2026-02-04 07:24:06] No new Telegram messages
+[2026-02-04 07:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:24:06] Message monitor cycle completed (PID: 42743)
+[2026-02-04 07:26:00] Starting message monitor (PID: 42988) - Offset: 87565543
+[2026-02-04 07:26:06] No new Telegram messages
+[2026-02-04 07:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:26:06] Message monitor cycle completed (PID: 42988)
+[2026-02-04 07:28:00] Starting message monitor (PID: 43138) - Offset: 87565543
+[2026-02-04 07:28:06] No new Telegram messages
+[2026-02-04 07:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:28:06] Message monitor cycle completed (PID: 43138)
+[2026-02-04 07:30:00] Starting message monitor (PID: 43272) - Offset: 87565543
+[2026-02-04 07:30:06] No new Telegram messages
+[2026-02-04 07:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:30:06] Message monitor cycle completed (PID: 43272)
+[2026-02-04 07:32:00] Starting message monitor (PID: 43454) - Offset: 87565543
+[2026-02-04 07:32:05] No new Telegram messages
+[2026-02-04 07:32:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:32:06] Message monitor cycle completed (PID: 43454)
+[2026-02-04 07:34:00] Starting message monitor (PID: 43600) - Offset: 87565543
+[2026-02-04 07:34:06] No new Telegram messages
+[2026-02-04 07:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:34:06] Message monitor cycle completed (PID: 43600)
+[2026-02-04 07:36:00] Starting message monitor (PID: 43829) - Offset: 87565543
+[2026-02-04 07:36:06] No new Telegram messages
+[2026-02-04 07:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:36:06] Message monitor cycle completed (PID: 43829)
+[2026-02-04 07:38:00] Starting message monitor (PID: 43978) - Offset: 87565543
+[2026-02-04 07:38:05] No new Telegram messages
+[2026-02-04 07:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:38:06] Message monitor cycle completed (PID: 43978)
+[2026-02-04 07:40:00] Starting message monitor (PID: 44123) - Offset: 87565543
+[2026-02-04 07:40:06] No new Telegram messages
+[2026-02-04 07:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:40:06] Message monitor cycle completed (PID: 44123)
+[2026-02-04 07:42:00] Starting message monitor (PID: 44285) - Offset: 87565543
+[2026-02-04 07:42:06] No new Telegram messages
+[2026-02-04 07:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:42:06] Message monitor cycle completed (PID: 44285)
+[2026-02-04 07:44:00] Starting message monitor (PID: 44430) - Offset: 87565543
+[2026-02-04 07:44:05] No new Telegram messages
+[2026-02-04 07:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:44:06] Message monitor cycle completed (PID: 44430)
+[2026-02-04 07:46:00] Starting message monitor (PID: 44680) - Offset: 87565543
+[2026-02-04 07:46:06] No new Telegram messages
+[2026-02-04 07:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 07:46:06] Message monitor cycle completed (PID: 44680)
+[2026-02-04 07:48:00] Starting message monitor (PID: 44820) - Offset: 87565543
+[2026-02-04 07:48:05] No new Telegram messages
+[2026-02-04 07:48:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:48:05] Message monitor cycle completed (PID: 44820)
+[2026-02-04 07:50:00] Starting message monitor (PID: 44960) - Offset: 87565543
+[2026-02-04 07:50:05] No new Telegram messages
+[2026-02-04 07:50:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:50:05] Message monitor cycle completed (PID: 44960)
+[2026-02-04 07:52:00] Starting message monitor (PID: 45149) - Offset: 87565543
+[2026-02-04 07:52:05] No new Telegram messages
+[2026-02-04 07:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:52:05] Message monitor cycle completed (PID: 45149)
+[2026-02-04 07:54:00] Starting message monitor (PID: 45275) - Offset: 87565543
+[2026-02-04 07:54:05] No new Telegram messages
+[2026-02-04 07:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:54:05] Message monitor cycle completed (PID: 45275)
+[2026-02-04 07:56:00] Starting message monitor (PID: 45523) - Offset: 87565543
+[2026-02-04 07:56:05] No new Telegram messages
+[2026-02-04 07:56:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:56:05] Message monitor cycle completed (PID: 45523)
+[2026-02-04 07:58:00] Starting message monitor (PID: 45672) - Offset: 87565543
+[2026-02-04 07:58:05] No new Telegram messages
+[2026-02-04 07:58:05] Checking iMessages (extended lookback)...
+[2026-02-04 07:58:05] Message monitor cycle completed (PID: 45672)
+[2026-02-04 08:00:00] Starting message monitor (PID: 45792) - Offset: 87565543
+[2026-02-04 08:00:05] No new Telegram messages
+[2026-02-04 08:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:00:05] Message monitor cycle completed (PID: 45792)
+[2026-02-04 08:02:00] Starting message monitor (PID: 45984) - Offset: 87565543
+[2026-02-04 08:02:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 08:02:01] Checking iMessages (extended lookback)...
+[2026-02-04 08:02:01] Message monitor cycle completed (PID: 45984)
+[2026-02-04 08:04:00] Starting message monitor (PID: 46134) - Offset: 87565543
+[2026-02-04 08:04:05] No new Telegram messages
+[2026-02-04 08:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:04:05] Message monitor cycle completed (PID: 46134)
+[2026-02-04 08:06:01] Starting message monitor (PID: 46362) - Offset: 87565543
+[2026-02-04 08:06:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 08:06:01] Checking iMessages (extended lookback)...
+[2026-02-04 08:06:01] Message monitor cycle completed (PID: 46362)
+[2026-02-04 08:08:00] Starting message monitor (PID: 46509) - Offset: 87565543
+[2026-02-04 08:08:06] No new Telegram messages
+[2026-02-04 08:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:08:06] Message monitor cycle completed (PID: 46509)
+[2026-02-04 08:10:01] Starting message monitor (PID: 46653) - Offset: 87565543
+[2026-02-04 08:10:06] No new Telegram messages
+[2026-02-04 08:10:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:10:06] Message monitor cycle completed (PID: 46653)
+[2026-02-04 08:12:01] Starting message monitor (PID: 46818) - Offset: 87565543
+[2026-02-04 08:12:06] No new Telegram messages
+[2026-02-04 08:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:12:06] Message monitor cycle completed (PID: 46818)
+[2026-02-04 08:14:01] Starting message monitor (PID: 46956) - Offset: 87565543
+[2026-02-04 08:14:06] No new Telegram messages
+[2026-02-04 08:14:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:14:06] Message monitor cycle completed (PID: 46956)
+[2026-02-04 08:16:00] Starting message monitor (PID: 47220) - Offset: 87565543
+[2026-02-04 08:16:05] No new Telegram messages
+[2026-02-04 08:16:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:16:05] Message monitor cycle completed (PID: 47220)
+[2026-02-04 08:18:00] Starting message monitor (PID: 47343) - Offset: 87565543
+[2026-02-04 08:18:05] No new Telegram messages
+[2026-02-04 08:18:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:18:05] Message monitor cycle completed (PID: 47343)
+[2026-02-04 08:20:00] Starting message monitor (PID: 47493) - Offset: 87565543
+[2026-02-04 08:20:01] ERROR: Failed to get Telegram updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[2026-02-04 08:20:01] Checking iMessages (extended lookback)...
+[2026-02-04 08:20:01] Message monitor cycle completed (PID: 47493)
+[2026-02-04 08:22:00] Starting message monitor (PID: 47667) - Offset: 87565543
+[2026-02-04 08:22:05] No new Telegram messages
+[2026-02-04 08:22:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:22:05] Message monitor cycle completed (PID: 47667)
+[2026-02-04 08:24:01] Starting message monitor (PID: 47796) - Offset: 87565543
+[2026-02-04 08:24:06] No new Telegram messages
+[2026-02-04 08:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:24:06] Message monitor cycle completed (PID: 47796)
+[2026-02-04 08:26:00] Starting message monitor (PID: 48049) - Offset: 87565543
+[2026-02-04 08:26:06] No new Telegram messages
+[2026-02-04 08:26:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:26:06] Message monitor cycle completed (PID: 48049)
+[2026-02-04 08:28:01] Starting message monitor (PID: 48197) - Offset: 87565543
+[2026-02-04 08:28:06] No new Telegram messages
+[2026-02-04 08:28:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:28:06] Message monitor cycle completed (PID: 48197)
+[2026-02-04 08:30:00] Starting message monitor (PID: 48327) - Offset: 87565543
+[2026-02-04 08:30:06] No new Telegram messages
+[2026-02-04 08:30:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:30:06] Message monitor cycle completed (PID: 48327)
+[2026-02-04 08:32:00] Starting message monitor (PID: 48509) - Offset: 87565543
+[2026-02-04 08:32:06] No new Telegram messages
+[2026-02-04 08:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:32:06] Message monitor cycle completed (PID: 48509)
+[2026-02-04 08:34:00] Starting message monitor (PID: 48651) - Offset: 87565543
+[2026-02-04 08:34:06] No new Telegram messages
+[2026-02-04 08:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:34:06] Message monitor cycle completed (PID: 48651)
+[2026-02-04 08:36:00] Starting message monitor (PID: 48887) - Offset: 87565543
+[2026-02-04 08:36:06] No new Telegram messages
+[2026-02-04 08:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:36:06] Message monitor cycle completed (PID: 48887)
+[2026-02-04 08:38:00] Starting message monitor (PID: 49029) - Offset: 87565543
+[2026-02-04 08:38:05] No new Telegram messages
+[2026-02-04 08:38:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:38:06] Message monitor cycle completed (PID: 49029)
+[2026-02-04 08:40:00] Starting message monitor (PID: 49175) - Offset: 87565543
+[2026-02-04 08:40:06] No new Telegram messages
+[2026-02-04 08:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:40:06] Message monitor cycle completed (PID: 49175)
+[2026-02-04 08:42:00] Starting message monitor (PID: 49340) - Offset: 87565543
+[2026-02-04 08:42:06] No new Telegram messages
+[2026-02-04 08:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:42:06] Message monitor cycle completed (PID: 49340)
+[2026-02-04 08:44:00] Starting message monitor (PID: 49479) - Offset: 87565543
+[2026-02-04 08:44:05] No new Telegram messages
+[2026-02-04 08:44:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:44:06] Message monitor cycle completed (PID: 49479)
+[2026-02-04 08:46:00] Starting message monitor (PID: 49738) - Offset: 87565543
+[2026-02-04 08:46:06] No new Telegram messages
+[2026-02-04 08:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:46:06] Message monitor cycle completed (PID: 49738)
+[2026-02-04 08:48:00] Starting message monitor (PID: 49877) - Offset: 87565543
+[2026-02-04 08:48:06] No new Telegram messages
+[2026-02-04 08:48:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:48:06] Message monitor cycle completed (PID: 49877)
+[2026-02-04 08:50:00] Starting message monitor (PID: 50019) - Offset: 87565543
+[2026-02-04 08:50:05] No new Telegram messages
+[2026-02-04 08:50:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:50:06] Message monitor cycle completed (PID: 50019)
+[2026-02-04 08:52:00] Starting message monitor (PID: 50199) - Offset: 87565543
+[2026-02-04 08:52:05] No new Telegram messages
+[2026-02-04 08:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:52:06] Message monitor cycle completed (PID: 50199)
+[2026-02-04 08:54:00] Starting message monitor (PID: 50325) - Offset: 87565543
+[2026-02-04 08:54:05] No new Telegram messages
+[2026-02-04 08:54:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:54:06] Message monitor cycle completed (PID: 50325)
+[2026-02-04 08:56:00] Starting message monitor (PID: 50582) - Offset: 87565543
+[2026-02-04 08:56:05] No new Telegram messages
+[2026-02-04 08:56:05] Checking iMessages (extended lookback)...
+[2026-02-04 08:56:06] Message monitor cycle completed (PID: 50582)
+[2026-02-04 08:58:00] Starting message monitor (PID: 50729) - Offset: 87565543
+[2026-02-04 08:58:06] No new Telegram messages
+[2026-02-04 08:58:06] Checking iMessages (extended lookback)...
+[2026-02-04 08:58:06] Message monitor cycle completed (PID: 50729)
+[2026-02-04 09:00:00] Starting message monitor (PID: 50880) - Offset: 87565543
+[2026-02-04 09:00:05] No new Telegram messages
+[2026-02-04 09:00:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:00:06] Message monitor cycle completed (PID: 50880)
+[2026-02-04 09:02:00] Starting message monitor (PID: 51202) - Offset: 87565543
+[2026-02-04 09:02:05] No new Telegram messages
+[2026-02-04 09:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:02:05] Message monitor cycle completed (PID: 51202)
+[2026-02-04 09:04:00] Starting message monitor (PID: 51347) - Offset: 87565543
+[2026-02-04 09:04:05] No new Telegram messages
+[2026-02-04 09:04:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:04:05] Message monitor cycle completed (PID: 51347)
+[2026-02-04 09:06:01] Starting message monitor (PID: 51577) - Offset: 87565543
+[2026-02-04 09:06:06] No new Telegram messages
+[2026-02-04 09:06:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:06:06] Message monitor cycle completed (PID: 51577)
+[2026-02-04 09:08:00] Starting message monitor (PID: 51732) - Offset: 87565543
+[2026-02-04 09:08:06] No new Telegram messages
+[2026-02-04 09:08:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:08:06] Message monitor cycle completed (PID: 51732)
+[2026-02-04 09:10:00] Starting message monitor (PID: 51904) - Offset: 87565543
+[2026-02-04 09:10:06] No new Telegram messages
+[2026-02-04 09:10:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:10:06] Message monitor cycle completed (PID: 51904)
+[2026-02-04 09:12:00] Starting message monitor (PID: 52027) - Offset: 87565543
+[2026-02-04 09:12:06] No new Telegram messages
+[2026-02-04 09:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:12:06] Message monitor cycle completed (PID: 52027)
+[2026-02-04 09:14:00] Starting message monitor (PID: 52177) - Offset: 87565543
+[2026-02-04 09:14:06] No new Telegram messages
+[2026-02-04 09:14:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:14:06] Message monitor cycle completed (PID: 52177)
+[2026-02-04 09:16:00] Starting message monitor (PID: 52437) - Offset: 87565543
+[2026-02-04 09:16:06] No new Telegram messages
+[2026-02-04 09:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:16:06] Message monitor cycle completed (PID: 52437)
+[2026-02-04 09:18:00] Starting message monitor (PID: 52604) - Offset: 87565543
+[2026-02-04 09:18:05] No new Telegram messages
+[2026-02-04 09:18:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:18:05] Message monitor cycle completed (PID: 52604)
+[2026-02-04 09:20:01] Starting message monitor (PID: 52779) - Offset: 87565543
+[2026-02-04 09:20:06] No new Telegram messages
+[2026-02-04 09:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:20:06] Message monitor cycle completed (PID: 52779)
+[2026-02-04 09:22:01] Starting message monitor (PID: 52931) - Offset: 87565543
+[2026-02-04 09:22:07] No new Telegram messages
+[2026-02-04 09:22:07] Checking iMessages (extended lookback)...
+[2026-02-04 09:22:07] Message monitor cycle completed (PID: 52931)
+[2026-02-04 09:24:00] Starting message monitor (PID: 53065) - Offset: 87565543
+[2026-02-04 09:24:05] No new Telegram messages
+[2026-02-04 09:24:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:24:05] Message monitor cycle completed (PID: 53065)
+[2026-02-04 09:26:00] Starting message monitor (PID: 53311) - Offset: 87565543
+[2026-02-04 09:26:05] No new Telegram messages
+[2026-02-04 09:26:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:26:05] Message monitor cycle completed (PID: 53311)
+[2026-02-04 09:28:00] Starting message monitor (PID: 53458) - Offset: 87565543
+[2026-02-04 09:28:05] No new Telegram messages
+[2026-02-04 09:28:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:28:05] Message monitor cycle completed (PID: 53458)
+[2026-02-04 09:30:00] Starting message monitor (PID: 53623) - Offset: 87565543
+[2026-02-04 09:30:05] No new Telegram messages
+[2026-02-04 09:30:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:30:05] Message monitor cycle completed (PID: 53623)
+[2026-02-04 09:32:01] Starting message monitor (PID: 53771) - Offset: 87565543
+[2026-02-04 09:32:06] No new Telegram messages
+[2026-02-04 09:32:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:32:06] Message monitor cycle completed (PID: 53771)
+[2026-02-04 09:34:01] Starting message monitor (PID: 53924) - Offset: 87565543
+[2026-02-04 09:34:06] No new Telegram messages
+[2026-02-04 09:34:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:34:06] Message monitor cycle completed (PID: 53924)
+[2026-02-04 09:36:00] Starting message monitor (PID: 54152) - Offset: 87565543
+[2026-02-04 09:36:06] No new Telegram messages
+[2026-02-04 09:36:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:36:06] Message monitor cycle completed (PID: 54152)
+[2026-02-04 09:38:00] Starting message monitor (PID: 54290) - Offset: 87565543
+[2026-02-04 09:38:06] No new Telegram messages
+[2026-02-04 09:38:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:38:06] Message monitor cycle completed (PID: 54290)
+[2026-02-04 09:40:00] Starting message monitor (PID: 54446) - Offset: 87565543
+[2026-02-04 09:40:06] No new Telegram messages
+[2026-02-04 09:40:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:40:06] Message monitor cycle completed (PID: 54446)
+[2026-02-04 09:42:00] Starting message monitor (PID: 54602) - Offset: 87565543
+[2026-02-04 09:42:06] No new Telegram messages
+[2026-02-04 09:42:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:42:06] Message monitor cycle completed (PID: 54602)
+[2026-02-04 09:44:00] Starting message monitor (PID: 54757) - Offset: 87565543
+[2026-02-04 09:44:06] No new Telegram messages
+[2026-02-04 09:44:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:44:06] Message monitor cycle completed (PID: 54757)
+[2026-02-04 09:46:00] Starting message monitor (PID: 55010) - Offset: 87565543
+[2026-02-04 09:46:06] No new Telegram messages
+[2026-02-04 09:46:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:46:06] Message monitor cycle completed (PID: 55010)
+[2026-02-04 09:48:00] Starting message monitor (PID: 55147) - Offset: 87565543
+[2026-02-04 09:48:06] No new Telegram messages
+[2026-02-04 09:48:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:48:06] Message monitor cycle completed (PID: 55147)
+[2026-02-04 09:50:00] Starting message monitor (PID: 55295) - Offset: 87565543
+[2026-02-04 09:50:05] No new Telegram messages
+[2026-02-04 09:50:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:50:05] Message monitor cycle completed (PID: 55295)
+[2026-02-04 09:52:00] Starting message monitor (PID: 55474) - Offset: 87565543
+[2026-02-04 09:52:05] No new Telegram messages
+[2026-02-04 09:52:05] Checking iMessages (extended lookback)...
+[2026-02-04 09:52:05] Message monitor cycle completed (PID: 55474)
+[2026-02-04 09:54:01] Starting message monitor (PID: 55612) - Offset: 87565543
+[2026-02-04 09:54:06] No new Telegram messages
+[2026-02-04 09:54:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:54:06] Message monitor cycle completed (PID: 55612)
+[2026-02-04 09:56:00] Starting message monitor (PID: 55900) - Offset: 87565543
+[2026-02-04 09:56:06] No new Telegram messages
+[2026-02-04 09:56:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:56:06] Message monitor cycle completed (PID: 55900)
+[2026-02-04 09:58:00] Starting message monitor (PID: 56059) - Offset: 87565543
+[2026-02-04 09:58:06] No new Telegram messages
+[2026-02-04 09:58:06] Checking iMessages (extended lookback)...
+[2026-02-04 09:58:06] Message monitor cycle completed (PID: 56059)
+[2026-02-04 10:00:00] Starting message monitor (PID: 56211) - Offset: 87565543
+[2026-02-04 10:00:06] No new Telegram messages
+[2026-02-04 10:00:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:00:06] Message monitor cycle completed (PID: 56211)
+[2026-02-04 10:02:00] Starting message monitor (PID: 56392) - Offset: 87565543
+[2026-02-04 10:02:05] No new Telegram messages
+[2026-02-04 10:02:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:02:06] Message monitor cycle completed (PID: 56392)
+[2026-02-04 10:04:00] Starting message monitor (PID: 56533) - Offset: 87565543
+[2026-02-04 10:04:06] No new Telegram messages
+[2026-02-04 10:04:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:04:06] Message monitor cycle completed (PID: 56533)
+[2026-02-04 10:06:00] Starting message monitor (PID: 56816) - Offset: 87565543
+[2026-02-04 10:06:05] No new Telegram messages
+[2026-02-04 10:06:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:06:06] Message monitor cycle completed (PID: 56816)
+[2026-02-04 10:08:00] Starting message monitor (PID: 56958) - Offset: 87565543
+[2026-02-04 10:08:05] No new Telegram messages
+[2026-02-04 10:08:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:08:05] Message monitor cycle completed (PID: 56958)
+[2026-02-04 10:10:00] Starting message monitor (PID: 57123) - Offset: 87565543
+[2026-02-04 10:10:05] No new Telegram messages
+[2026-02-04 10:10:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:10:05] Message monitor cycle completed (PID: 57123)
+[2026-02-04 10:12:01] Starting message monitor (PID: 57298) - Offset: 87565543
+[2026-02-04 10:12:06] No new Telegram messages
+[2026-02-04 10:12:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:12:06] Message monitor cycle completed (PID: 57298)
+[2026-02-04 10:14:01] Starting message monitor (PID: 57462) - Offset: 87565543
+[2026-02-04 10:14:06] No new Telegram messages
+[2026-02-04 10:14:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:14:06] Message monitor cycle completed (PID: 57462)
+[2026-02-04 10:16:01] Starting message monitor (PID: 57776) - Offset: 87565543
+[2026-02-04 10:16:06] No new Telegram messages
+[2026-02-04 10:16:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:16:06] Message monitor cycle completed (PID: 57776)
+[2026-02-04 10:18:00] Starting message monitor (PID: 57935) - Offset: 87565543
+[2026-02-04 10:18:06] No new Telegram messages
+[2026-02-04 10:18:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:18:06] Message monitor cycle completed (PID: 57935)
+[2026-02-04 10:20:00] Starting message monitor (PID: 58083) - Offset: 87565543
+[2026-02-04 10:20:06] No new Telegram messages
+[2026-02-04 10:20:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:20:06] Message monitor cycle completed (PID: 58083)
+[2026-02-04 10:22:00] Starting message monitor (PID: 58282) - Offset: 87565543
+[2026-02-04 10:22:06] No new Telegram messages
+[2026-02-04 10:22:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:22:06] Message monitor cycle completed (PID: 58282)
+[2026-02-04 10:24:00] Starting message monitor (PID: 58438) - Offset: 87565543
+[2026-02-04 10:24:06] No new Telegram messages
+[2026-02-04 10:24:06] Checking iMessages (extended lookback)...
+[2026-02-04 10:24:06] Message monitor cycle completed (PID: 58438)
+[2026-02-04 10:26:00] Starting message monitor (PID: 58749) - Offset: 87565543
+[2026-02-04 10:26:05] No new Telegram messages
+[2026-02-04 10:26:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:26:06] Message monitor cycle completed (PID: 58749)
+[2026-02-04 10:28:00] Starting message monitor (PID: 58945) - Offset: 87565543
+[2026-02-04 10:28:02] Found 1 Telegram message(s) to process
+[2026-02-04 10:28:02] NEW: Telegram message from gigawidearray (chat:285295183): I am logan
+Please push to the proper repos for the uncommitted work....
+[2026-02-04 10:28:20] ✅ Sent Telegram response to gigawidearray: Hey there! 🦞...
+[2026-02-04 10:28:20] Checking iMessages (extended lookback)...
+[2026-02-04 10:28:21] Message monitor cycle completed (PID: 58945)
+[2026-02-04 10:30:00] Starting message monitor (PID: 59184) - Offset: 87565568
+[2026-02-04 10:30:05] No new Telegram messages
+[2026-02-04 10:30:05] Checking iMessages (extended lookback)...
+[2026-02-04 10:30:05] Message monitor cycle completed (PID: 59184)
